@@ -80,7 +80,7 @@ small, .text_small {font-size: 0.8rem;}
 #center {
   display: grid;
   box-sizing: border-box;
-  background: url("assets/img/Pilger-Background.webp") center center no-repeat;
+  background: url("img/Pilger-Background.webp") center center no-repeat;
   position: relative;
 
   height: 70%;
