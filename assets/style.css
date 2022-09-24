@@ -6,6 +6,8 @@
     --gray:#777777;
 }
 
+
+
 html {
   font-size: 100%;
 } /*16px*/
@@ -69,7 +71,7 @@ small, .text_small {font-size: 0.8rem;}
 }
 
 .brand {
-  font-family: 'Syncopate';
+  font-family: 'Syncopate', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -117,6 +119,7 @@ button {
   background: #04040400;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 1.563rem;
   line-height: 1.75;
   color: var(--almostwhite);
 }
