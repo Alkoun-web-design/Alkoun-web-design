@@ -28,12 +28,11 @@ body {
 .Roboto {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.75;
   color: var(--almostwhite);
 }
 
 .container {
-  padding: 8px 7%;
+  padding: 0 7%;
 }
 
 #header {
@@ -41,9 +40,13 @@ body {
   background-color: var(--almostblack);
 }
 
-.between {
+.brand {
+  margin: 0 10px;
+}
+
+.centered {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left {
@@ -54,11 +57,6 @@ body {
 .right {
   display: flex;
   justify-content: end;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
 }
 
 #center {
@@ -80,10 +78,9 @@ body {
 
 .earth {
   position: absolute;
-  top: -200px;
+  top: -100%;
   right: 0px;
   z-index: -1;
-  height: 200%;
 }
 
 #footer {
@@ -92,19 +89,30 @@ body {
 }
 
 button {
-  padding: 1% 7%;
   border: 0px;
   background: var(--spacegrade);
   border-radius: 15px;
 }
 
+.headline {
+  line-height: 1em;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.cta {
+  padding: 0.8% 2%;
+  text-align: center;
+}
+
 .nav-button {
-  width: 192px;
+  padding: 0.7% 0;
+  margin: 1% 4%;
+  width: 15%;
   box-sizing: border-box;
   border: 1px solid var(--spacegrade);
   border-radius: 15px;
   background: var(--gray);
-  line-height: 1.75;
   color: var(--almostwhite);
 }
 
@@ -132,27 +140,26 @@ button {
 
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
-    font-weight: 400;
+    font-weight: 400, 700;
     line-height: 1.3;
   }
-
+  
   h1 {
     margin-top: 0;
-    font-size: 1.383rem;
+    font-size: 1.802rem;
   }
-
-  h2 {font-size: 1.296rem;}
-
-  h3, .brand {font-size: 1.215rem;}
-
-  h4 {font-size: 1.138rem;}
-
-  h5, button, .nav-button {font-size: 1.067rem;}
-
-  small, .text_small {font-size: 0.937rem;}
+  
+  h2 {font-size: 1.602rem;}
+  
+  h3 {font-size: 1.424rem;}
+  
+  h4, .brand {font-size: 1.266rem;}
+  
+  h5, button, .nav-button {font-size: 1.125rem;}
+  
+  small, .text_small {font-size: 0.889rem;}
 
 }
-
 
 @media only screen and (min-width: 600px) {
 
@@ -160,33 +167,26 @@ button {
 
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
-    font-weight: 400;
+    font-weight: 400, 700;
     line-height: 1.3;
   }
-
+  
   h1 {
     margin-top: 0;
-    font-size: 1.383rem;
+    font-size: 2.488rem;
   }
-
-  h2 {font-size: 1.296rem;}
-
-  h3, .brand {font-size: 1.215rem;}
-
-  h4 {font-size: 1.138rem;}
-
-  h5, button, .nav-button {font-size: 1.067rem;}
-
-  small, .text_small {font-size: 0.937rem;}
-
-  .nav-logo {
-    margin: 2px 5px -3px 0px;
-    width: 20px;
-    height: 20px;
-  }
+  
+  h2 {font-size: 2.074rem;}
+  
+  h3 {font-size: 1.728rem;}
+  
+  h4, .brand {font-size: 1.44rem;}
+  
+  h5, button, .nav-button {font-size: 1.2rem;}
+  
+  small, .text_small {font-size: 0.833rem;}  
 
 }
-
 
 @media only screen and (min-width: 992px) {
   
@@ -194,24 +194,24 @@ button {
 
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
-    font-weight: 400;
+    font-weight: 400, 700;
     line-height: 1.3;
   }
 
   h1 {
     margin-top: 0;
-    font-size: 1.802rem;
+    font-size: 3.052rem;
   }
 
-  h2 {font-size: 1.602rem;}
+  h2 {font-size: 2.441rem;}
 
-  h3, .brand {font-size: 1.424rem;}
+  h3 {font-size: 1.953rem;}
 
-  h4 {font-size: 1.266rem;}
+  h4, .brand {font-size: 1.563rem;}
 
-  h5, button, .nav-button  {font-size: 1.125rem;}
+  h5, button, .nav-button {font-size: 1.25rem;}
 
-  small, .text_small {font-size: 0.889rem;}
+  small, .text_small {font-size: 0.8rem;}
 
 }
 
@@ -221,23 +221,23 @@ button {
 
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
-    font-weight: 700;
+    font-weight: 400, 700;
     line-height: 1.3;
   }
-
+  
   h1 {
     margin-top: 0;
-    font-size: 2.488rem;
+    font-size: 4.209rem;
   }
-
-  h2 {font-size: 2.074rem;}
-
-  h3, .brand {font-size: 1.728rem;}
-
-  h4 {font-size: 1.44rem;}
-
-  h5, button, .nav-button {font-size: 1.2rem;}
-
-  small, .text_small {font-size: 0.833rem;}
+  
+  h2 {font-size: 3.157rem;}
+  
+  h3 {font-size: 2.369rem;}
+  
+  h4, .brand {font-size: 1.777rem;}
+  
+  h5, button, .nav-button {font-size: 1.333rem;}
+  
+  small, .text_small {font-size: 0.75rem;}
 
 }
