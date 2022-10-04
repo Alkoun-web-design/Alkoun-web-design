@@ -4,6 +4,7 @@
     --almostwhite:#F4F4F4;
     --spacegrade: linear-gradient(90deg, #1D176C 0%, #7118B6 100%);
     --gray:#777777;
+    --glass: #0000007e;
 }
 
 
@@ -19,6 +20,10 @@ body {
   padding: 0px;
 }
 
+.page-title{
+  margin: 1% auto;
+}
+
 .Syncopate {
   font-family: 'Syncopate', sans-serif;
   font-weight: 700;
@@ -31,17 +36,115 @@ body {
   color: var(--almostwhite);
 }
 
-.container {
-  padding: 0 7%;
+button {
+  border: 0px;
+  background: var(--spacegrade);
+  border-radius: 15px;
 }
 
+.button-logo {
+  margin: 0px 0px -6px 2px;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
 #header {
+  padding: 0 7%;
   height: 15%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1%;
   background-color: var(--almostblack);
 }
 
 .brand {
   margin: 0 10px;
+}
+
+.sm-icons {
+  margin: 1%;
+  width: 25%;
+  height: 25%;
+}
+
+
+
+
+#center {
+  padding: 0 7%;
+  position: relative;
+  height: 70%;
+  width: 100%;
+  overflow: clip;
+  box-sizing: border-box;
+  border: 1px solid var(--gray);
+  border-radius: 25px;
+}
+
+.content-box {
+  margin: 3% 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: var(--glass);
+}
+
+
+
+
+#home {
+  display: none;
+}
+
+.headline {
+  line-height: 1em;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.cta-button {
+  padding: 0.8% 2%;
+}
+
+
+
+
+#about-us {
+  display: none;
+}
+
+
+
+
+#projects {
+  display: flex;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-gap: 1%;
+  margin: 1%;
+}
+
+.project-details {
+  display: none;
+}
+
+.project-img {
+  height: auto;
+  width: 100%;
+  align-items: center;
+}
+
+
+
+
+#contact-us {
+  display: none;
 }
 
 .centered {
@@ -59,21 +162,10 @@ body {
   justify-content: end;
 }
 
-#center {
-  position: relative;
-  height: 70%;
-  width: 100%;
-  overflow: clip;
-  box-sizing: border-box;
-  border: 1px solid var(--gray);
-  border-radius: 25px;
-}
-
 .space {
   position: absolute;
   z-index: -2;
   left: -110%;
-  object-fit: cover;
 }
 
 .earth {
@@ -83,26 +175,13 @@ body {
   z-index: -1;
 }
 
+
+
+
 #footer {
+  padding: 0 7%;
   height: 15%;
   background-color: var(--almostblack);
-}
-
-button {
-  border: 0px;
-  background: var(--spacegrade);
-  border-radius: 15px;
-}
-
-.headline {
-  line-height: 1em;
-  text-align: center;
-  padding: 5% 0;
-}
-
-.cta {
-  padding: 0.8% 2%;
-  text-align: center;
 }
 
 .nav-button {
@@ -112,25 +191,19 @@ button {
   box-sizing: border-box;
   border: 1px solid var(--spacegrade);
   border-radius: 15px;
-  background: var(--gray);
-  color: var(--almostwhite);
-}
-
-:hover .nav-button{
-  
+  background: var(--almostwhite);
+  color: var(--almostblack);
+  line-height: 1em;
 }
 
 .nav-logo {
   margin: 2px 5px -3px 0px;
   width: 20px;
   height: 20px;
+  color: var(--almostblack)
 }
 
-.button-logo {
-  margin: 0px 0px -6px 2px;
-  width: 30px;
-  height: 30px;
-}
+
 
 
 
@@ -159,6 +232,15 @@ button {
   
   small, .text_small {font-size: 0.889rem;}
 
+  .earth {
+    right: -250px;
+  }
+
+  .nav-button {
+    padding: 0.7% 0;
+    margin: 1% 4%;
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -186,6 +268,15 @@ button {
   
   small, .text_small {font-size: 0.833rem;}  
 
+  .earth {
+    right: -150px;
+  }
+
+  .nav-button {
+    padding: 0.7% 0;
+    margin: 1% 4%;
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -213,6 +304,15 @@ button {
 
   small, .text_small {font-size: 0.8rem;}
 
+  .earth {
+    right: -50px;
+  }
+
+  .nav-button {
+    padding: 0.7% 0;
+    margin: 1% 4%;
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -239,5 +339,15 @@ button {
   h5, button, .nav-button {font-size: 1.333rem;}
   
   small, .text_small {font-size: 0.75rem;}
+
+  .earth {
+    right: 0px;
+  }
+
+  .nav-button {
+    padding: 0.7% 0;
+    margin: 1% 4%;
+    width: 15%;
+  }
 
 }
