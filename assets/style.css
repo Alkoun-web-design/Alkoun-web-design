@@ -39,6 +39,7 @@ s
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--almostwhite);
+  line-height: 1.5em;
 }
 
 button {
@@ -102,25 +103,23 @@ button {
 
 #home {
   display: block;
+  opacity: 0;
 }
 
 .headline {
   line-height: 1em;
   text-align: center;
   margin: 6% 0 2%;
-  color: var(--transparent);
 }
 
 .cta {
   margin: 1% 0 2%;
-  color: var(--transparent);
 }
 
 .cta-btn {
   margin: auto;
   padding: 0.8% 3%;
   text-align: center;
-  color: var(--transparent);
 }
 
 
@@ -128,6 +127,7 @@ button {
 
 #about-us {
   display: none;
+  opacity: 0;
 }
 
 
@@ -135,6 +135,7 @@ button {
 
 #projects {
   display: none;
+  opacity: 0;
 }
 
 .project-grid {
@@ -163,6 +164,7 @@ button {
 
 #contact-us {
   display: none;
+  opacity: 0;
 }
 
 .centered {

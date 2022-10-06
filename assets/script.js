@@ -14,13 +14,16 @@ const spaceRotation = anime({
 });
 
 
-// Hovering on Navigation Buttons
-const navBtnHover = anime({
-  targets: '.headline, .cta',
-  duration: 20000,
-  color: '#F4F4F4;',
+// Page Contents Fading In
+const pageFadeIn = anime({
+  delay: 1000,
+  targets: '#home, #about-us, #projects, #contact-us',
+  duration: 8000,
+  opacity: 1,
 });
 
+
+document.getElementById('homebtn, projectsbtn, aboutusbtn, contactusbtn').onclick = pageFadeIn;
 
 
 // Navigation Buttons
@@ -80,7 +83,7 @@ var animation = anime({
 
 
 
-document.querySelector('.play-pause-demo .play').onclick = animation.play;
+
 document.querySelector('.play-pause-demo .pause').onclick = animation.pause;
 
 
