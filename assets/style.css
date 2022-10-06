@@ -5,6 +5,7 @@
     --spacegrade: linear-gradient(90deg, #1D176C 0%, #7118B6 100%);
     --gray:#777777;
     --glass: #0000007e;
+    --transparent: #00000000;
 }
 
 
@@ -19,7 +20,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+s
 .page-title{
   margin: 1% auto;
 }
@@ -107,16 +108,19 @@ button {
   line-height: 1em;
   text-align: center;
   margin: 6% 0 2%;
+  color: var(--transparent);
 }
 
 .cta {
   margin: 1% 0 2%;
+  color: var(--transparent);
 }
 
 .cta-btn {
   margin: auto;
   padding: 0.8% 3%;
   text-align: center;
+  color: var(--transparent);
 }
 
 
@@ -140,7 +144,11 @@ button {
   margin: 1%;
 }
 
-.project-details {
+.project-1-details {
+  display: block;
+}
+
+.project-2-details {
   display: none;
 }
 
@@ -201,16 +209,17 @@ button {
   box-sizing: border-box;
   border: 1px solid var(--spacegrade);
   border-radius: 15px;
-  background: var(--almostwhite);
-  color: var(--almostblack);
+  /*background: var(--almostwhite);
+  color: var(--almostblack);*/
+  background: var(--almostblack);
+  color: var(--almostwhite);
   line-height: 1em;
 }
 
 .nav-logo {
-  margin: 2px 5px -3px 0px;
+  margin: 2px 5px -1.6px 0px;
   width: 20px;
   height: 20px;
-  color: var(--almostblack)
 }
 
 

@@ -1,3 +1,8 @@
+const h = document.getElementById("home");
+const p = document.getElementById("projects");
+const a = document.getElementById("about-us");
+const c = document.getElementById("contact-us");
+
 
 // Space Animation
 const spaceRotation = anime({
@@ -9,23 +14,45 @@ const spaceRotation = anime({
 });
 
 
+// Hovering on Navigation Buttons
+const navBtnHover = anime({
+  targets: '.headline, .cta',
+  duration: 20000,
+  color: '#F4F4F4;',
+});
 
-function showPage() {
-  const h = document.getElementById("home");
-  const p = document.getElementById("projects");
-  const a = document.getElementById("about-us");
-  const c = document.getElementById("contact-us");
 
-  if (h.style.display === "none") {
-    h.style.display = "block" && p, a, c.style.display = "none";
-  } else if (p.style.display = "none"){
-    p.style.display = "flex" && h, a, c.style.display = "none";
-  } else if (a.style.display = "none"){
-    a.style.display = "block" && h, p, c.style.display = "none";
-  } else if (c.style.display = "none"){
-    c.style.display = "block" && h, p, a.style.display = "none";
-  }
+
+// Navigation Buttons
+function showHome() {
+  h.style.display = "block";
+  c.style.display = "none";
+  a.style.display = "none";
+  p.style.display = "none";
 };
+  
+function showProjects() {
+  p.style.display = "flex"; 
+  c.style.display = "none";
+  a.style.display = "none";
+  h.style.display = "none";
+};
+
+function showAboutUs() {
+  a.style.display = "block";
+  c.style.display = "none";
+  h.style.display = "none";
+  p.style.display = "none";
+};
+
+function showContactUs() {
+  c.style.display = "block";
+  p.style.display = "none";
+  h.style.display = "none";
+  a.style.display = "none";
+};
+
+document.querySelector('').onclick = animation.play;
 
 
 /*// Navigation button hover and mouse over for project details
@@ -38,17 +65,6 @@ element.addEventListener("mouseover", event => {
 element.addEventListener("mouseout", event => {
   console.log("Mouse out");
 });
-
-//Sjowing elements
-const element = document.querySelector("#box");
-
-element.style.display = "block";
-
-
-//Hiding Elements
-const element = document.querySelector("#box");
-
-element.style.display = "none";
 
 
 //Content Appearing and Disappearing
