@@ -22,6 +22,12 @@ const pageFadeIn = anime({
   opacity: 1,
 });
 
+const pageFadeOut = anime({
+  delay: 1000,
+  targets: '#home, #about-us, #projects, #contact-us',
+  duration: 8000,
+  opacity: 1,
+});
 
 document.getElementById('homebtn, projectsbtn, aboutusbtn, contactusbtn').onclick = pageFadeIn;
 
@@ -55,7 +61,7 @@ function showContactUs() {
   a.style.display = "none";
 };
 
-document.querySelector('').onclick = animation.play;
+//document.querySelector('.nav-btn').onclick = pageFadeIn;
 
 
 /*// Navigation button hover and mouse over for project details
