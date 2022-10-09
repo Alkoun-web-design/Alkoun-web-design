@@ -12,15 +12,18 @@
 
 html {
   font-size: 100%;
+  height: 100%;
+  width: 100%;
 } /*16px*/
 
 body {
   background-color: var(--almostblack);
+  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-s
+
 .page-title{
   margin: 10px auto;
 }
@@ -73,11 +76,11 @@ button:hover {
 
 
 #header {
-  padding: 0 7%;
-  height: 72px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 1%;
+  padding: 0 7%;
+  height: 10%;
   background-color: var(--almostblack);
 }
 
@@ -91,7 +94,7 @@ button:hover {
   height: 18%;
 }
 
-.sm-icons:hover{
+.sm-icons:hover {
   color: var(--spacegrade);
 }
 
@@ -101,7 +104,7 @@ button:hover {
 #center {
   padding: 0 7%;
   position: relative;
-  height: 448px;
+  height: 72%;
   width: 100%;
   overflow: clip;
   box-sizing: border-box;
@@ -220,7 +223,7 @@ button:hover {
   width: 15%;
   box-sizing: border-box;
   border: 1px solid var(--almostwhite);
-  border-radius: 15px;
+  border-radius: 50px;
   background: var(--almostblack);
   color: var(--almostwhite);
   line-height: 1em;
