@@ -2,7 +2,10 @@ const h = document.getElementById("home");
 const p = document.getElementById("projects");
 const a = document.getElementById("about-us");
 const c = document.getElementById("contact-us");
-
+const exceptHome = document.getElementById("projects, about-us, contact-us");
+const exceptAboutUs = document.getElementById("projects, home, contact-us");
+const exceptProjects = document.getElementById("home, about-us, contact-us");
+const exceptContactUs = document.getElementById("projects, about-us, home");
 
 // Space Animation
 const spaceRotation = anime({
@@ -17,23 +20,20 @@ const spaceRotation = anime({
 // Page Contents Fading In
 const pageFadeIn = anime({
   delay: 1000,
-  targets: '#home, #about-us, #projects, #contact-us',
+  targets: '#home',
   duration: 8000,
   opacity: 1,
 });
 
-const pageFadeOut = anime({
-  delay: 1000,
-  targets: '#home, #about-us, #projects, #contact-us',
-  duration: 8000,
-  opacity: 1,
-});
 
-document.getElementById('homebtn, projectsbtn, aboutusbtn, contactusbtn').onclick = pageFadeIn;
-
-
-// Navigation Buttons
+// Navigation
 function showHome() {
+  anime({
+    delay: 50,
+    targets: '#home',
+    duration: 8000,
+    opacity: 1,
+  });
   h.style.display = "block";
   c.style.display = "none";
   a.style.display = "none";
@@ -41,6 +41,12 @@ function showHome() {
 };
   
 function showProjects() {
+  anime({
+    delay: 50,
+    targets: '#projects',
+    duration: 8000,
+    opacity: 1,
+  });
   p.style.display = "flex"; 
   c.style.display = "none";
   a.style.display = "none";
@@ -48,6 +54,12 @@ function showProjects() {
 };
 
 function showAboutUs() {
+  anime({
+    delay: 50,
+    targets: '#about-us',
+    duration: 8000,
+    opacity: 1,
+  });
   a.style.display = "block";
   c.style.display = "none";
   h.style.display = "none";
@@ -55,25 +67,50 @@ function showAboutUs() {
 };
 
 function showContactUs() {
+  anime({
+    delay: 50,
+    targets: '#contact-us',
+    duration: 8000,
+    opacity: 1,
+  });
   c.style.display = "block";
   p.style.display = "none";
   h.style.display = "none";
   a.style.display = "none";
 };
 
-//document.querySelector('.nav-btn').onclick = pageFadeIn;
+// Navigatin button hover effect
+
+const navButton = document.querySelector(".nav-button");
 
 
-/*// Navigation button hover and mouse over for project details
-const hoverAnime = document.querySelector(".nav-buton");
-
-element.addEventListener("mouseover", event => {
+  navButton.addEventListener("mouseover", event => {
   console.log("Mouse in");
 });
 
-element.addEventListener("mouseout", event => {
+navButton.addEventListener("mouseout", event => {
   console.log("Mouse out");
 });
+
+
+
+//document.querySelector('.nav-btn').onclick = pageFadeIn;
+
+
+
+/*// Navigation button hover and mouse over for project details
+
+
+
+
+
+const pageFadeOut = anime({
+  delay: 500,
+  targets: '#home, #about-us, #projects, #contact-us',
+  duration: 8000,
+  opacity: 1,
+});
+
 
 
 //Content Appearing and Disappearing

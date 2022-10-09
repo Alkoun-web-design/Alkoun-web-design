@@ -22,7 +22,7 @@ body {
 }
 s
 .page-title{
-  margin: 1% auto;
+  margin: 10px auto;
 }
 
 .Syncopate {
@@ -39,15 +39,34 @@ s
 }
 
 button {
-  border: 0px;
+  border: 1px solid var(--almostwhite);
+  background: var(--transparent);
+  transition: 1.5s;
+}
+
+button:hover {
+  border: 1px solid var(--almostwhite);
   background: var(--spacegrade);
-  border-radius: 15px;
 }
 
 .button-logo {
   margin: 0px 0px -6px 2px;
   width: 30px;
   height: 30px;
+}
+
+.space {
+  position: absolute;
+  z-index: -2;
+  left: -110%;
+}
+
+.earth {
+  align-self: center;
+  position: absolute;
+  top: -100%;
+  right: 0px;
+  z-index: -1;
 }
 
 
@@ -70,6 +89,10 @@ button {
   margin: 5% 3% 1% 0;
   width: 18%;
   height: 18%;
+}
+
+.sm-icons:hover{
+  color: var(--spacegrade);
 }
 
 
@@ -114,6 +137,7 @@ button {
 
 .cta-btn {
   margin: auto;
+  border-radius: 30px;
   padding: 0.8% 3%;
   text-align: center;
 }
@@ -181,19 +205,6 @@ button {
   justify-content:right;
 }
 
-.space {
-  position: absolute;
-  z-index: -2;
-  left: -110%;
-}
-
-.earth {
-  position: absolute;
-  top: -100%;
-  right: 0px;
-  z-index: -1;
-}
-
 
 
 
@@ -208,13 +219,16 @@ button {
   margin: 1% 4%;
   width: 15%;
   box-sizing: border-box;
-  border: 1px solid var(--spacegrade);
+  border: 1px solid var(--almostwhite);
   border-radius: 15px;
-  /*background: var(--almostwhite);
-  color: var(--almostblack);*/
   background: var(--almostblack);
   color: var(--almostwhite);
   line-height: 1em;
+  transition: 1.5s;
+}
+
+.nav-button:hover {
+  background: var(--spacegrade);
 }
 
 .nav-logo {
@@ -257,14 +271,15 @@ button {
   }
 
   .nav-logo {
-  margin: 2px 3px -2px 0px;
-  width: 17px;
-  height: 17px;
-  color: var(--almostblack)
-}
+    display: block;
+    margin: 1px auto;
+    width: 17px;
+    height: 17px;
+    color: var(--almostblack);
+  }
 
   .nav-button {
-    border: 1px solid var(--spacegrade);
+    border: 1px solid var(--almostwhite);
     border-radius: 15px;
     line-height: 1em;
     padding: 0.8% 0;
@@ -302,10 +317,19 @@ button {
     right: -150px;
   }
 
+  .nav-logo {
+    display: block;
+    margin: 1px auto;
+    width: 17px;
+    height: 17px;
+    color: var(--almostblack);
+  }
+
+
   .nav-button {
     padding: 0.7% 0;
-    margin: 1% 4%;
-    width: 15%;
+    margin: 1% 2%;
+    width: 40%;
   }
 }
 
