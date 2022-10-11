@@ -10,7 +10,7 @@ const exceptContactUs = document.getElementById("projects, about-us, home");
 // Space Animation
 const spaceRotation = anime({
     targets: '.space',
-    translateX: 1440,
+    translateX: 1028,
     duration: 40000,
     easing: 'linear',
     loop: true,
@@ -79,18 +79,46 @@ function showContactUs() {
   a.style.display = "none";
 };
 
-// Navigatin button hover effect
 
-const navButton = document.querySelector(".nav-button");
+// Project Details show upon hover
+const projectDetails1 = document.querySelector(".project-1-details");
+const projectName1 = document.getElementById("project-1");
+const projectDetails2 = document.querySelector(".project-2-details");
+const projectName2 = document.getElementById("project-2");
+const projectDetails3 = document.querySelector(".project-3-details");
+const projectName3 = document.getElementById("project-3");
 
-
-  navButton.addEventListener("mouseover", event => {
-  console.log("Mouse in");
+projectName1.addEventListener("mouseover", function() {
+  projectDetails1.style.display="block";
+  projectDetails2.style.display="none";
+  projectDetails3.style.display="none";
 });
 
-navButton.addEventListener("mouseout", event => {
-  console.log("Mouse out");
+projectName2.addEventListener("mouseover", function() {
+  projectDetails2.style.display="block";
+  projectDetails1.style.display="none";
+  projectDetails3.style.display="none";
 });
+
+projectName3.addEventListener("mouseover", function() {
+  projectDetails3.style.display="block";
+  projectDetails1.style.display="none";
+  projectDetails2.style.display="none";
+});
+
+
+//Social Media Icons hovering
+const socialMediaIcons = document.querySelector(".sm-icons");
+socialMediaIcons.addEventListener("mouseover", function() {
+  socialMediaIcons.style.fill="linear-gradient(90deg, #1D176C 0%, #7118B6 100%)";
+});
+
+
+
+
+//  navButton.addEventListener("mouseout", event => {
+//  console.log("Mouse out");
+//});
 
 
 
