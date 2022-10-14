@@ -11,6 +11,55 @@
 
 
 
+.firework {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5vmin;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgb(0, 4, 255) 0.5vmin, #0000 0) 50% 0%;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+}
+
+
+
+@keyframes firework {
+  0% { 
+    transform: translate(-50%, 60vh);
+    width: 0.5vmin;
+    opacity: 1;
+  }
+  50% { 
+    width: 0.5vmin;
+    opacity: 1;
+  }
+  100% { 
+    width: 45vmin; 
+    opacity: 0; 
+  }
+}
+
+
+.firework {
+  animation: firework 2s infinite;
+}
+
+.firework,
+.firework::before,
+.firework::after {
+  content: "";
+}
+.firework::before {
+  transform: translate(-50%, -50%) rotate(25deg) !important; 
+}
+.firework::after {
+  transform: translate(-50%, -50%) rotate(-37deg) !important;
+}
+
+
+
 html {
   font-size: 100%;
   height: 100%;
@@ -174,10 +223,17 @@ p {
   margin: 1% 0 2%;
 }
 
-.cta-btn {
-  margin: auto;
-  padding: 0.8% 3%;
+.headline2 {
+  line-height: 1em;
   text-align: center;
+  margin: 7% 0 2%;
+  opacity: 0;
+  display: none;
+}
+
+.cta2 {
+  display: none;
+  margin: 1% 0 2%;
 }
 
 

@@ -3,6 +3,50 @@ const p = document.getElementById("projects");
 const a = document.getElementById("about-us");
 const c = document.getElementById("contact-us");
 const pp = document.getElementById("priv-policy");
+const l2 = document.getElementById("line2")
+const l4 = document.getElementById("line4")
+const l1 = document.getElementById("line1")
+const l3 = document.getElementById("line3")
+
+
+//hAPPY bIRTHDAY!!
+const hB1 = anime({
+  targets: '#header',
+  delay: 3000, 
+  duration: 2000,
+  easing: 'linear',
+  opacity: 0,
+});
+
+const HB2 = anime({
+  targets: '#footer', 
+  delay: 3000, 
+  duration: 2000,
+  easing: 'linear',
+  opacity: 0,
+});
+
+const HB4 = anime({
+  targets: '#line1, #line3',
+  delay: 4000, 
+  duration: 2000,
+  easing: 'linear',
+  opacity: 0,
+});
+
+const HB5 = anime({
+  targets: '#line2, #line4',
+  delay: 6000, 
+  duration: 2000,
+  easing: 'linear',
+  opacity: 1,
+});
+
+const HB6 = l1.style.display = "none";
+const HB7 = l3.style.display = "none";
+const HB8 = l2.style.display = "block";
+const HN9 = l4.style.display = "block";
+
 
 
 // Space Animation
