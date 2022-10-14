@@ -2,10 +2,8 @@ const h = document.getElementById("home");
 const p = document.getElementById("projects");
 const a = document.getElementById("about-us");
 const c = document.getElementById("contact-us");
-const exceptHome = document.getElementById("projects, about-us, contact-us");
-const exceptAboutUs = document.getElementById("projects, home, contact-us");
-const exceptProjects = document.getElementById("home, about-us, contact-us");
-const exceptContactUs = document.getElementById("projects, about-us, home");
+const pp = document.getElementById("priv-policy");
+
 
 // Space Animation
 const spaceRotation = anime({
@@ -38,6 +36,7 @@ function showHome() {
   c.style.display = "none";
   a.style.display = "none";
   p.style.display = "none";
+  pp.style.display = "none";
 };
   
 function showProjects() {
@@ -51,6 +50,7 @@ function showProjects() {
   c.style.display = "none";
   a.style.display = "none";
   h.style.display = "none";
+  pp.style.display = "none";
 };
 
 function showAboutUs() {
@@ -64,6 +64,7 @@ function showAboutUs() {
   c.style.display = "none";
   h.style.display = "none";
   p.style.display = "none";
+  pp.style.display = "none";
 };
 
 function showContactUs() {
@@ -77,8 +78,22 @@ function showContactUs() {
   p.style.display = "none";
   h.style.display = "none";
   a.style.display = "none";
+  pp.style.display = "none";
 };
 
+function showPrivPolicy() {
+  anime({
+    delay: 50,
+    targets: '#priv-policy',
+    duration: 8000,
+    opacity: 1,
+  });
+  pp.style.display = "block";
+  c.style.display = "none";
+  p.style.display = "none";
+  h.style.display = "none";
+  a.style.display = "none";
+};
 
 // Project Details show upon hover
 const projectDetails1 = document.querySelector(".project-1-details");
@@ -89,18 +104,36 @@ const projectDetails3 = document.querySelector(".project-3-details");
 const projectName3 = document.getElementById("project-3");
 
 projectName1.addEventListener("mouseover", function() {
+  anime({
+    targets: '.project-1-details',
+    duration: 400,
+    easing: 'linear',
+    opacity: 1,
+  });
   projectDetails1.style.display="block";
   projectDetails2.style.display="none";
   projectDetails3.style.display="none";
 });
 
 projectName2.addEventListener("mouseover", function() {
+  anime({
+    targets: '.project-2-details',
+    duration: 400,
+    easing: 'linear',
+    opacity: 1,
+  });
   projectDetails2.style.display="block";
   projectDetails1.style.display="none";
   projectDetails3.style.display="none";
 });
 
 projectName3.addEventListener("mouseover", function() {
+  anime({
+    targets: '.project-3-details',
+    duration: 400,
+    easing: 'linear',
+    opacity: 1,
+  });
   projectDetails3.style.display="block";
   projectDetails1.style.display="none";
   projectDetails2.style.display="none";
