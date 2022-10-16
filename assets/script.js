@@ -7,9 +7,10 @@ const l2 = document.getElementById("line2")
 const l4 = document.getElementById("line4")
 const l1 = document.getElementById("line1")
 const l3 = document.getElementById("line3")
+const man = document.querySelector(".man")
 
 
-//hAPPY bIRTHDAY!!
+/*hAPPY bIRTHDAY!!
 const hB1 = anime({
   targets: '#header',
   delay: 3000, 
@@ -45,7 +46,7 @@ const HB5 = anime({
 const HB6 = l1.style.display = "none";
 const HB7 = l3.style.display = "none";
 const HB8 = l2.style.display = "block";
-const HN9 = l4.style.display = "block";
+const HN9 = l4.style.display = "block";*/
 
 
 
@@ -56,6 +57,15 @@ const spaceRotation = anime({
     duration: 40000,
     easing: 'linear',
     loop: true,
+});
+
+const spacemanRotation = anime({
+  delay: 8000,
+  targets: '.man',
+  translateX: 3000,
+  duration: 50000,
+  easing: 'linear',
+  loop: true,
 });
 
 
