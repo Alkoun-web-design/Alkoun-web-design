@@ -7,12 +7,16 @@
     --gray:#777777;
     --glass: #0000007e;
     --transparent: #00000000;
+    --newgray: #1f1f1f;
 }
 
 
 .l21 {
-  border-radius: 139px;
-  background: linear-gradient(145deg, #31383a, #292f31);
+  width: 20px;
+  height: 20px;
+  margin: auto 3%;
+  border-radius: 2em;
+  background: var(--almostblack);
   box-shadow:  20px 20px 60px #191d1e, -20px -20px 60px #434b4e;
 }
 
@@ -48,15 +52,15 @@ body {
 }
 
 a, button {
-  border: 1px solid var(--almostwhite);
   border-radius: 2em;
   background: var(--transparent);
   transition: 1s;
 }
 
 a:hover, button:hover {
-  border: 1px solid var(--transparent);
+  border-radius: 2 em;
   background: var(--spacegrade);
+  /*border: 1px solid var(--transparent);*/
   color: var(--almostwhite)
 }
 
@@ -126,11 +130,11 @@ p {
   gap: 1%;
   padding: 0 7%;
   height: 10%;
-  background-color: var(--almostblack);
 }
 
 .brand {
   margin: 5% 0 auto;
+  line-height: 1em;
 }
 
 .sm-icons {
@@ -218,24 +222,28 @@ p {
   display: flex;
 }
 
-#project-1:hover, #project-2:hover, #project-3:hover {
-  color: var(--almostblack);
-  background-color: var(--almostwhitetrans);
-}
-
 .project-name-clm {
   margin: 2px;
 }
 
-.project-name {
-  display: inline;
+.project-name-1, .project-name-2, .project-name-3 {
+  display: flex;
+  border-radius: 1em;
   margin: 5px 0 5px 5px;
 }
 
+.project-name-1 p, .project-name-2 p, .project-name-3 p {
+  margin: 10px;
+}
+.project-name-1:hover, .project-name-2:hover, .project-name-3:hover {
+  background-image: linear-gradient(90deg, #1D176C 0%, #7118B6 100%);
+}
+
 .project-name-img {
-  display: inline;
-  width: 26px;
-  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  margin: auto 5px auto auto;
+  fill: var(--almostwhite);
 }
 
 .project-grid {
@@ -293,12 +301,12 @@ input {
 }
 
 textarea {
-  margin: 10px 40px 10px auto;
-  padding: 50px 250px;
+  margin: 10px 10px 10px 25px;
+  width: 80%;
 }
 
 .form-btn {
-  margin: 10px 0;
+  margin: 20px;
   padding: 1px 25px;
   text-align: center;
 }
@@ -330,7 +338,6 @@ textarea {
 #footer {
   padding: 0 7%;
   height: 16%;
-  background-color: var(--almostblack);
 }
 
 .nav-button {
@@ -342,7 +349,7 @@ textarea {
   text-align: center;
 }
 
-.nav-button:hover, .nav-button:focus {
+.nav-button:focus {
   background: var(--spacegrade);
   border: 1px solid var(--transparent);
 }
@@ -360,7 +367,7 @@ textarea {
 
 .priv-policy-btn {
   padding: 0;
-  margin: auto;
+  margin: 7px auto 2px;
   width: 150px;
   box-sizing: border-box;
   border: 1px solid var(--transparent);
@@ -433,13 +440,10 @@ textarea {
 
   .sm-icons {
     margin: 5% 3% 0;
-    width: 20px;
-    height: 20px;
-    fill: var(--almostwhite);
-    transition: 0.5s;
+    width: 18px;
+    height: 18px;
   }
 }
-
   
 @media only screen and (min-width: 600px) {
 
@@ -485,10 +489,8 @@ textarea {
 
   .sm-icons {
     margin: 5% 3% 0;
-    width: 16px;
-    height: 16px;
-    fill: var(--almostwhite);
-    transition: 0.5s;
+    width: 19px;
+    height: 19px;
   }
 }
 
@@ -526,6 +528,12 @@ textarea {
     margin: 1% 4%;
     width: 15%;
   }
+
+  .sm-icons {
+    margin: 5% 3% 0;
+    width: 23px;
+    height: 23px;
+  }  
 }
 
 @media only screen and (min-width: 1200px) {
@@ -568,6 +576,12 @@ textarea {
     padding: 0.7% 0;
     margin: 1% 4%;
     width: 15%;
+  }
+
+  .sm-icons {
+    margin: 5% 3% 0;
+    width: 25px;
+    height: 25px;
   }
 
 }

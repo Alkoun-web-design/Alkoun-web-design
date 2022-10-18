@@ -151,13 +151,13 @@ function showPrivPolicy() {
 
 // Project Details show upon hover
 const projectDetails1 = document.querySelector(".project-1-details");
-const projectName1 = document.getElementById("project-1");
+const project1 = document.querySelector(".project-name-1");
 const projectDetails2 = document.querySelector(".project-2-details");
-const projectName2 = document.getElementById("project-2");
+const project2 = document.querySelector(".project-name-2");
 const projectDetails3 = document.querySelector(".project-3-details");
-const projectName3 = document.getElementById("project-3");
+const project3 = document.querySelector(".project-name-3");
 
-projectName1.addEventListener("mouseover", function() {
+project1.addEventListener("mouseover", function() {
   anime({
     targets: '.project-1-details',
     duration: 400,
@@ -169,7 +169,7 @@ projectName1.addEventListener("mouseover", function() {
   projectDetails3.style.display="none";
 });
 
-projectName2.addEventListener("mouseover", function() {
+project2.addEventListener("mouseover", function() {
   anime({
     targets: '.project-2-details',
     duration: 400,
@@ -181,7 +181,7 @@ projectName2.addEventListener("mouseover", function() {
   projectDetails3.style.display="none";
 });
 
-projectName3.addEventListener("mouseover", function() {
+project3.addEventListener("mouseover", function() {
   anime({
     targets: '.project-3-details',
     duration: 400,
@@ -193,6 +193,75 @@ projectName3.addEventListener("mouseover", function() {
   projectDetails2.style.display="none";
 });
 
+
+
+/*Hover Effect on Project Names
+project1.addEventListener("mouseover", function() {
+  anime({
+    targets: '.project-name-1, .project-name-img-1',
+    duration: 400,
+    easing: 'linear',
+    color: "#040404",
+    backgroundColor: "#f4f4f4e1",
+    fill: "#040404",
+  });
+});
+
+project1.addEventListener("mouseout", function() {
+  anime({
+    targets: '.project-name-1, .project-name-img-1',
+    duration: 400,
+    easing: 'linear',
+    color: "#F4F4F4",
+    backgroundColor: "0",
+    fill: "#F4F4F4",
+  });
+});
+
+
+project2.addEventListener("mouseover", function() {
+  anime({
+    targets: '.project-name-2, .project-name-img-2',
+    duration: 400,
+    easing: 'linear',
+    color: "#040404",
+    backgroundColor: "#f4f4f4e1",
+    fill: "#040404",
+  });
+});
+
+project2.addEventListener("mouseout", function() {
+  anime({
+    targets: '.project-name-2, .project-name-img-2',
+    duration: 400,
+    easing: 'linear',
+    color: "#F4F4F4",
+    backgroundColor: "0",
+    fill: "#F4F4F4",
+  });
+});
+
+project3.addEventListener("mouseover", function() {
+  anime({
+    targets: '.project-name-3, .project-name-img-3',
+    duration: 400,
+    easing: 'linear',
+    color: "#040404",
+    backgroundColor: "#f4f4f4e1",
+    fill: "#040404",
+  });
+});
+
+project3.addEventListener("mouseout", function() {
+  anime({
+    targets: '.project-name-3, .project-name-img-3',
+    duration: 400,
+    easing: 'linear',
+    color: "#F4F4F4",
+    backgroundColor: "0",
+    fill: "#F4F4F4",
+  });
+});*/
 
 //Social Media Icons hovering
 const socialMediaIcons = document.querySelector(".sm-icons");
