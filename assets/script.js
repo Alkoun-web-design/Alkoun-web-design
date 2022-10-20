@@ -8,7 +8,8 @@ const l4 = document.getElementById("line4")
 const l1 = document.getElementById("line1")
 const l3 = document.getElementById("line3")
 const man = document.querySelector(".man")
-
+const projectNames = ["project-name-1", "project-name-2", "project-name-3"]
+const projectDetails = ["project-details-1", "project-details-2", "project-details-3"]
 
 /*hAPPY bIRTHDAY!!
 const hB1 = anime({
@@ -148,6 +149,14 @@ function showPrivPolicy() {
   h.style.display = "none";
   a.style.display = "none";
 };
+
+
+//Click on project button to show project
+function showProject() {
+ ; 
+};
+
+
 
 // Project Details show upon hover
 const projectDetails1 = document.querySelector(".project-1-details");
