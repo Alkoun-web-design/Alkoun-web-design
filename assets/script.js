@@ -3,13 +3,17 @@ const p = document.getElementById("projects");
 const a = document.getElementById("about-us");
 const c = document.getElementById("contact-us");
 const pp = document.getElementById("priv-policy");
-const l2 = document.getElementById("line2")
-const l4 = document.getElementById("line4")
-const l1 = document.getElementById("line1")
-const l3 = document.getElementById("line3")
-const man = document.querySelector(".man")
-const projectNames = ["project-name-1", "project-name-2", "project-name-3"]
-const projectDetails = ["project-details-1", "project-details-2", "project-details-3"]
+const l2 = document.getElementById("line2");
+const l4 = document.getElementById("line4");
+const l1 = document.getElementById("line1");
+const l3 = document.getElementById("line3");
+const man = document.querySelector(".man");
+const prevProject = document.getElementById("prev-arrow");
+const nextProject = document.getElementById("next-arrow");
+const projectNames = ["project-name-1", "project-name-2", "project-name-3"];
+const projectDetails = ["project-details-1", "project-details-2", "project-details-3"];
+const screenWidth = window.screen.width / 1.276;
+
 
 /*hAPPY bIRTHDAY!!
 const hB1 = anime({
@@ -54,7 +58,7 @@ const HN9 = l4.style.display = "block";*/
 // Space Animation
 const spaceRotation = anime({
     targets: '.space',
-    translateX: 1028,
+    translateX: screenWidth,
     duration: 40000,
     easing: 'linear',
     loop: true,
@@ -152,10 +156,13 @@ function showPrivPolicy() {
 
 
 //Click on project button to show project
-function showProject() {
- ; 
+function showPrvPrjct() {
+
 };
 
+function showNxtPrjct() {
+
+};
 
 
 // Project Details show upon hover
