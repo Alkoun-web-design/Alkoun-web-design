@@ -15,44 +15,27 @@ const projectDetails = ["project-details-1", "project-details-2", "project-detai
 const screenWidth = window.screen.width / 1.276;
 
 
-/*hAPPY bIRTHDAY!!
-const hB1 = anime({
-  targets: '#header',
-  delay: 3000, 
-  duration: 2000,
-  easing: 'linear',
-  opacity: 0,
-});
-
-const HB2 = anime({
-  targets: '#footer', 
-  delay: 3000, 
-  duration: 2000,
-  easing: 'linear',
-  opacity: 0,
-});
-
-const HB4 = anime({
-  targets: '#line1, #line3',
-  delay: 4000, 
-  duration: 2000,
-  easing: 'linear',
-  opacity: 0,
-});
-
-const HB5 = anime({
-  targets: '#line2, #line4',
-  delay: 6000, 
-  duration: 2000,
-  easing: 'linear',
-  opacity: 1,
-});
-
-const HB6 = l1.style.display = "none";
-const HB7 = l3.style.display = "none";
-const HB8 = l2.style.display = "block";
-const HN9 = l4.style.display = "block";*/
-
+//fOR yOU
+function forYou(){ 
+  anime({
+    targets: '#header, #footer, #line1, #line3',
+    delay: 3000, 
+    duration: 2000,
+    easing: 'linear',
+    opacity: 0,
+  });
+  anime({
+    targets: '#music, #line2, #line4',
+    delay: 6000, 
+    duration: 2000,
+    easing: 'linear',
+    opacity: 1,
+  });
+  l1.style.display = "none";
+  l3.style.display = "none";
+  l2.style.display = "block";
+  l4.style.display = "block";
+};
 
 
 // Space Animation
