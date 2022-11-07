@@ -33,8 +33,13 @@ function forYou(){
   });
   l1.style.display = "none";
   l3.style.display = "none";
+  c.style.display = "none";
+  a.style.display = "none";
+  p.style.display = "none";
+  pp.style.display = "none";
   l2.style.display = "block";
   l4.style.display = "block";
+
 };
 
 
