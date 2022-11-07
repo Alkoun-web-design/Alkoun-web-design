@@ -1,9 +1,1 @@
-<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.5556 0H3.44444C1.55 0 0 1.55 0 3.44444V27.5556C0 29.4517 1.55 31 3.44444 31H20.6667H15.5V18.9444H12.0556V14.6819H15.5V11.1514C15.5 7.4245 17.5873 4.80672 21.9859 4.80672L25.0911 4.81017V9.29656H23.0296C21.3177 9.29656 20.6667 10.5813 20.6667 11.7731V14.6837H25.0893L24.1111 18.9444H20.6667V31H27.5556C29.45 31 31 29.4517 31 27.5556V3.44444C31 1.55 29.45 0 27.5556 0Z" fill="url(#paint0_linear_376_130)"/>
-<defs>
-<linearGradient id="paint0_linear_376_130" x1="0" y1="15.5" x2="31" y2="15.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#1D176C"/>
-<stop offset="1" stop-color="#7118B6"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none" xmlns:v="https://vecta.io/nano"><path d="M27.556 0H3.444C1.55 0 0 1.55 0 3.444v24.111C0 29.452 1.55 31 3.444 31h17.222H15.5V18.944h-3.444v-4.263H15.5v-3.53c0-3.727 2.087-6.345 6.486-6.345l3.105.003v4.486H23.03c-1.712 0-2.363 1.285-2.363 2.477v2.911h4.423l-.978 4.261h-3.444V31h6.889C29.45 31 31 29.452 31 27.556V3.444C31 1.55 29.45 0 27.556 0z" fill="url(#A)"/><defs><linearGradient id="A" x1="0" y1="15.5" x2="31" y2="15.5" gradientUnits="userSpaceOnUse"><stop stop-color="#1d176c"/><stop offset="1" stop-color="#7118b6"/></linearGradient></defs></svg>

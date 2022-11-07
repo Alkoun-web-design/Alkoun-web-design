@@ -1,0 +1,619 @@
+:root {
+    --nightblue:#10121B ;
+    --almostblack:#040404;
+    --almostwhite:#F4F4F4;
+    --almostwhitetrans: #f4f4f4e1;
+    --spacegrade: linear-gradient(90deg, #1D176C 0%, #7118B6 100%);
+    --gray:#777777;
+    --glass: #0000007e;
+    --transparent: #00000000;
+    --newgray: #1f1f1f;
+}
+
+
+
+
+html {
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+} /*16px*/
+
+body {
+  background-color: var(--almostblack);
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page-title{
+  margin: 10px auto;
+}
+
+.Syncopate {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  color: var(--almostwhite);
+}
+
+.Roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--almostwhite);
+  line-height: 1.5em;
+}
+
+a, button {
+  border-radius: 2em;
+  background: var(--spacegrade);
+  transition: 0.5s;
+}
+
+a {
+  width: fit-content;
+  margin: 2% 5%;
+  padding: 2px 10px;
+}
+
+.a:hover {
+  border-radius: 2em;
+  background: var(--transparent);
+  color: var(--almostwhite);
+}
+
+.button {
+  border-radius: 2em;
+  background: var(--almostblack);
+  height: 100%;
+  width: 100%; 
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: var(--transparent)
+}
+
+.man {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  right: 100%;
+}
+
+.space {
+  position: absolute;
+  height: 100%;
+  z-index: -3;
+  right: 0%;
+}
+
+.earth {
+  position: absolute;
+  bottom: -50%;
+  right: 0px;
+  z-index: -2;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  justify-content:right;
+}
+
+p {
+  margin: 2% 5%;
+}
+
+.link-icon {
+  width: 16px;
+  margin: 0 8px;
+}
+
+
+
+
+#header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1%;
+  padding: 0 7%;
+  height: 10%;
+}
+
+.brand {
+  margin: 5% 0 auto;
+  line-height: 1em;
+}
+
+.sm-icons {
+  margin: 8px 16px;
+  width: 32px;
+  fill: var(--almostwhite);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sm-icons:hover {
+  fill: #7118B6;
+}
+
+.l21 {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 5% 3% 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  border: 1px solid var(--transparent);
+
+}
+
+
+
+
+#center {
+  padding: 0 7%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 72%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--gray);
+  border-radius: 24px;
+}
+
+.content-box {
+  margin: 3% 0;
+  height: fit-content;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: var(--glass);
+}
+
+#home {
+  display: block;
+  opacity: 0;
+}
+
+.home-text {
+  margin: auto 10% auto 0;
+}
+
+#music {
+  opacity: 0;
+}
+
+.headline {
+  line-height: 1em;
+  text-align: center;
+  margin: 32px 0 2%;
+}
+
+.cta {
+  margin: 1% 0 2%;
+}
+
+.headline2 {
+  line-height: 1em;
+  text-align: center;
+  margin: 7% 0 2%;
+  opacity: 0;
+  display: none;
+}
+
+.cta2 {
+  display: none;
+  opacity: 0;
+  margin: 1% 0 2%;
+}
+
+
+
+
+#about-us {
+  display: none;
+  opacity: 0;
+}
+
+
+
+
+#projects {
+  display: none;
+  opacity: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.project-row {
+  display: flex;
+  justify-content: center;
+}
+
+.project-selector {
+  fill: var(--gray);
+  margin: 8px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project-selector:hover {
+  fill: var(--almostwhite);
+}
+
+.project-arrows {
+  width: 24x;
+  height: 24px;
+  fill:  var(--gray);
+  margin: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project-arrows:hover {
+  fill:  var(--almostwhite);
+}
+
+.project-name {
+  margin: 24px 32px;
+}
+
+#project-name-1 {
+  display: flex;
+}
+
+#project-name-2 {
+  display: none;
+}
+
+#project-name-3 {
+  display: none;
+}
+
+.project-img-preview {
+  width: 25%;
+  height: 50%;
+  border: 1px solid var(--gray);
+  margin: 16px 32px;
+  fill: var(--almostwhite);
+}
+
+#project-1-details {
+  display: block;
+}
+
+#project-2-details {
+  display: none;
+  opacity: 0;
+  overflow-y: auto;
+}
+
+#project-3-details {
+  display: none;
+  opacity: 0;
+  overflow-y: auto;
+}
+
+#project-scroll-area {
+  display: block;
+}
+
+.project-img {
+  opacity: 0.5;
+  border-radius: 16px;
+  height: 96px;
+  width: 96px;
+  margin: auto;
+  border: 1px solid var(--gray);
+}
+
+
+
+
+#contact-us {
+  display: none;
+  opacity: 0;
+}
+
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--almostwhite);
+  line-height: 1.5em;
+  margin: 8px;
+  border: 1px solid var(--almostwhite);
+  background-color: var(--transparent);
+  border-radius: 24px;
+}
+
+label {
+  margin: 16px 48px 16px 24px;
+}
+
+input {
+  margin: 16px 48px 16px 24px;
+}
+
+textarea {
+  margin: 16px 16px 16px 24px;
+  width: 80%;
+}
+
+.form-btn {
+  padding: 0;
+  margin: auto 4%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-btn-txt {
+  padding: 0;
+  margin: 0 16px;
+  display: inline;
+}
+
+.form-btn-icn {
+  padding: 0;
+  margin: 0 16px 0 0;  
+  display: inline;
+  width: 24px;
+}
+
+
+
+
+#priv-policy {
+  display: none;
+  opacity: 0;
+}
+
+
+
+
+#footer {
+  padding: 0 7%;
+  height: 16%;
+}
+
+.nav-button, .priv-policy-btn {
+  padding: 0;
+  margin: 4px auto;
+  width: 160px;
+  box-sizing: border-box;
+  border: 1px solid var(--transparent);
+}
+
+.nav-logo {
+  display: inline;
+  width: 24px;
+  height: 24px;
+}
+
+.nav-text {
+  margin: auto;
+  display: inline;
+}
+
+.pp-text {
+  display: inline;
+  font-size: 0.889rem;
+}
+
+.pp-logo {
+  display: inline;
+  margin: 0px 0px 1px 0px;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  p {margin-bottom: 1rem;}
+
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-weight: 400, 700;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 1.802rem;
+  }
+  
+  h2 {font-size: 1.602rem;}
+  
+  h3 {font-size: 1.424rem;}
+  
+  h4, .brand {font-size: 1.266rem;}
+  
+  h5, button, .nav-button {font-size: 1.125rem;}
+  
+  small, .text_small {font-size: 0.889rem;}
+
+  .earth {
+    right: -200px;
+  }
+
+  #footeer {
+    padding: 0 4%;
+  }
+
+  .nav-logo {
+    display: block;
+    margin: 0 auto;
+    width: 16px;
+    height: 16px;
+    color: var(--almostblack);
+  }
+
+  .nav-button {
+    border: 0;
+    margin: 1% 0;
+    width: 50%;
+  }
+
+  .sm-icons {
+    margin: 5% 3% 0;
+    width: 16px;
+    height: 16px;
+  }
+}
+  
+@media only screen and (min-width: 600px) {
+
+  p {margin-bottom: 1rem;}
+
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-weight: 400, 700;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 2.488rem;
+  }
+  
+  h2 {font-size: 2.074rem;}
+  
+  h3 {font-size: 1.728rem;}
+  
+  h4, .brand {font-size: 1.44rem;}
+  
+  h5, button, .nav-button {font-size: 1.2rem;}
+  
+  small, .text_small {font-size: 0.833rem;}  
+
+  .earth {
+    right: -150px;
+  }
+
+  .nav-logo {
+    margin: 1px auto;
+    width: 20px;
+    height: 20px;
+    color: var(--almostblack);
+  }
+
+  .nav-button {
+    margin: 1% 0;
+    width: 50%;
+  }
+
+  .sm-icons {
+    margin: 5% 3% 0;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  
+  p {margin-bottom: 1rem;}
+
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-weight: 400, 700;
+    line-height: 1.3;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+
+  h2 {font-size: 2.441rem;}
+
+  h3 {font-size: 1.953rem;}
+
+  h4, .brand {font-size: 1.563rem;}
+
+  h5, button, .nav-button {font-size: 1.25rem;}
+
+  small, .text_small {font-size: 0.8rem;}
+
+  .earth {
+    right: -50px;
+  }
+
+  .nav-button {
+    margin: 1% 4%;
+    width: 15%;
+  }
+
+  .sm-icons {
+    margin: 5% 3% 0;
+    width: 24px;
+    height: 24px;
+  }  
+}
+
+@media only screen and (min-width: 1200px) {
+
+  p {margin-bottom: 1rem;}
+
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-weight: 400, 700;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 4.209rem;
+  }
+  
+  h2 {font-size: 3.157rem;}
+  
+  h3 {font-size: 2.369rem;}
+  
+  h4, .brand {font-size: 1.777rem;}
+  
+  h5, button, .nav-button {font-size: 1.333rem;}
+  
+  small, .text_small {font-size: 0.75rem;}
+
+  .earth {
+    right: 0px;
+  }
+
+  .nav-text {
+    margin: 20px 0;
+  }
+
+  .nav-logo {
+    margin: 10px 5px 0 0px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-button {
+    margin: 1% 3%;
+    width: 15%;
+  }
+
+  .sm-icons {
+    margin: 5% 3% 0;
+    width: 24px;
+    height: 24px;
+  }
+
+}
