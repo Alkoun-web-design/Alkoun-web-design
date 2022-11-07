@@ -10,8 +10,8 @@ const l3 = document.getElementById("line3");
 const man = document.querySelector(".man");
 const prevProject = document.getElementById("prev-arrow");
 const nextProject = document.getElementById("next-arrow");
-const projectNames = ["project-name-1", "project-name-2", "project-name-3"];
-const projectDetails = ["project-details-1", "project-details-2", "project-details-3"];
+const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
+const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
 const screenWidth = window.screen.width / 1.276;
 
 
@@ -145,11 +145,29 @@ function showPrivPolicy() {
 
 //Click on project button to show project
 function showPrvPrjct() {
-
+  array.forEach(element => {
+    let i = 0
+    if (i > projectNames.length) {
+      projectNames[i].style.display = "flex";
+      i--;
+   }
+   else {
+      i = 0;   
+   }
+  });
 };
 
 function showNxtPrjct() {
-
+  array.forEach(element => {
+    let i = 0
+    if (i < projectNames.length) {
+      projectNames[i].style.display = "flex";
+      i++;
+   }
+   else {
+      i = 0;   
+   }
+  });
 };
 
 
