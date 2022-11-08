@@ -3,7 +3,7 @@
   --almostblack:#040404;
   --almostwhite:#F4F4F4;
   --almostwhitetrans: #f4f4f4e1;
-  --spacegrade: linear-gradient(to right, #392fca 0%, #9631e4 100%);
+  --spacegrade: linear-gradient(to right, #345785 0%, #743aa0 100%);
   --gray:#777777;
   --glass: #0000007e;
   --transparent: #00000000;
@@ -155,7 +155,6 @@ margin: 5% 3% 0;
 border-radius: 2em;
 box-sizing: border-box;
 border: 1px solid var(--transparent);
-
 }
 
 
