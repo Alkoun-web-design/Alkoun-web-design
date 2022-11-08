@@ -375,13 +375,13 @@ text-align: center;
 .form-btn-txt {
 padding: 0;
 margin: 0 16px;
-display: inline;
+display: inline-block;
 }
 
 .form-btn-icn {
 padding: 0;
 margin: 0 16px 0 0;  
-display: inline;
+display: inline-block;
 width: 24px;
 }
 
@@ -410,23 +410,29 @@ border: 1px solid var(--transparent);
 }
 
 .nav-logo {
-display: inline;
+display: inline-block;
+padding: 0%;
+margin: -2px 5px auto 5px;
 width: 16px;
 height: 16px;
 }
 
 .nav-text {
-display: inline;
+display: inline-block;
+padding: 0%;
+margin: 0;
 }
 
 .pp-text {
-display: inline;
+display: inline-block;
 font-size: 0.889rem;
+padding: 0%;
+margin: 0px;
 }
 
 .pp-logo {
-display: inline;
-margin: 0px 0px 1px 0px;
+display: inline-block;
+margin: -1px 3px;
 width: 16px;
 height: 16px;
 }
@@ -604,9 +610,10 @@ small, .text_small {font-size: 0.75rem;}
   right: 0px;
 }
 
-.nav-button {
-  margin: 1% 3%;
-  width: 15%;
+.nav-logo {
+  margin: -4px 5px auto 5px;
+  width: 18px;
+  height: 18px;
 }
 
 .sm-icons {
