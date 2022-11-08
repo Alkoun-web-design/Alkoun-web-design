@@ -3,7 +3,7 @@
   --almostblack:#040404;
   --almostwhite:#F4F4F4;
   --almostwhitetrans: #f4f4f4e1;
-  --spacegrade: linear-gradient(90deg, #1D176C 0%, #7118B6 100%);
+  --spacegrade: linear-gradient(to right, #392fca 0%, #9631e4 100%);
   --gray:#777777;
   --glass: #0000007e;
   --transparent: #00000000;
@@ -197,15 +197,24 @@ opacity: 0;
 
 .headline {
 line-height: 1em;
+background: var(--spacegrade);
+background-clip: text;
+-webkit-text-fill-color: transparent;
 text-align: center;
 margin: 32px 0 2%;
 }
 
 .cta {
 margin: 1% 0 2%;
+background: var(--spacegrade);
+background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .headline2 {
+background: var(--spacegrade);
+background-clip: text;
+-webkit-text-fill-color: transparent;
 line-height: 1em;
 text-align: center;
 margin: 7% 0 2%;
@@ -216,6 +225,9 @@ display: none;
 .cta2 {
 display: none;
 opacity: 0;
+background: var(--spacegrade);
+background-clip: text;
+-webkit-text-fill-color: transparent;
 margin: 1% 0 2%;
 }
 
@@ -243,7 +255,7 @@ justify-content: center;
 }
 
 .project-selector {
-fill: var(--gray);
+fill: var(--almostwhite);
 margin: 8px;
 height: 24px;
 width: 24px;
@@ -258,7 +270,7 @@ fill: var(--almostwhite);
 .project-arrows {
 width: 24x;
 height: 24px;
-fill:  var(--gray);
+fill:  var(--almostwhite);
 margin: 24px;
 cursor: pointer;
 transition: 0.5s;
@@ -273,7 +285,7 @@ margin: 24px 32px;
 }
 
 #project-name-0 {
-display: flex;
+display: inline-block;
 }
 
 #project-name-1 {
@@ -399,12 +411,11 @@ border: 1px solid var(--transparent);
 
 .nav-logo {
 display: inline;
-width: 24px;
-height: 24px;
+width: 16px;
+height: 16px;
 }
 
 .nav-text {
-margin: auto;
 display: inline;
 }
 
@@ -453,7 +464,7 @@ small, .text_small {font-size: 0.889rem;}
 }
 
 #footeer {
-  padding: 0 4%;
+  padding: 0 2%;
 }
 
 .nav-logo {
@@ -461,7 +472,6 @@ small, .text_small {font-size: 0.889rem;}
   margin: 0 auto;
   width: 16px;
   height: 16px;
-  color: var(--almostblack);
 }
 
 .nav-button {
@@ -510,7 +520,6 @@ small, .text_small {font-size: 0.833rem;}
   margin: 1px auto;
   width: 20px;
   height: 20px;
-  color: var(--almostblack);
 }
 
 .nav-button {
@@ -593,16 +602,6 @@ small, .text_small {font-size: 0.75rem;}
 
 .earth {
   right: 0px;
-}
-
-.nav-text {
-  margin: 20px 0;
-}
-
-.nav-logo {
-  margin: 10px 5px 0 0px;
-  width: 24px;
-  height: 24px;
 }
 
 .nav-button {
