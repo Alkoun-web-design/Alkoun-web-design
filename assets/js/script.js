@@ -65,7 +65,7 @@ const spacemanRotation = anime({
 // Page Contents Fading In
 const pageFadeIn = anime({
   delay: 1000,
-  targets: '#home',
+  targets: '#line1, #line3',
   duration: 8000,
   opacity: 1,
 });
@@ -145,10 +145,11 @@ function showPrivPolicy() {
 
 //Click on project button to show project
 function showPrvPrjct() {
-  array.forEach(element => {
+  forEach(projectNames => {
     let i = 0
-    if (i > projectNames.length) {
-      projectNames[i].style.display = "flex";
+    if (i >= projectNames.length) {
+      projectNames.style.display = "none";
+      projectNames[i].style.display = "inline-block";
       i--;
    }
    else {
@@ -179,7 +180,7 @@ const project2 = document.querySelector(".project-name-2");
 const projectDetails3 = document.querySelector(".project-3-details");
 const project3 = document.querySelector(".project-name-3");
 
-project1.addEventListener("mouseover", function() {
+project1.addEventListener("onclick", function() {
   anime({
     targets: '.project-1-details',
     duration: 400,

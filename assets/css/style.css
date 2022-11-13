@@ -90,8 +90,11 @@ right: 0%;
 
 .earth {
 position: absolute;
-bottom: -50%;
+height: 100vh;
 right: 0px;
+top: 0;
+bottom: 0;
+margin: auto 0;
 z-index: -2;
 }
 
@@ -127,7 +130,7 @@ display: grid;
 grid-template-columns: 50% 50%;
 gap: 1%;
 padding: 0 7%;
-height: 10%;
+height: 10vh;
 }
 
 .brand {
@@ -165,8 +168,8 @@ padding: 0 7%;
 position: relative;
 overflow-x: hidden;
 overflow-y: hidden;
-height: 72%;
-width: 100%;
+height: 72vh;
+width: 100vw;
 box-sizing: border-box;
 border: 1px solid var(--gray);
 border-radius: 24px;
@@ -183,51 +186,36 @@ background-color: var(--glass);
 
 #home {
 display: block;
-opacity: 0;
 }
 
 .home-text {
-margin: auto;
+  height: fit-content;
+  width: fit-content;
+  margin: 60px auto auto 0;
 }
 
 #music {
 opacity: 0;
 }
 
+#line1, #line2, #line3, #line4 {
+  opacity: 0;
+}
+
 .headline {
 line-height: 1em;
 background: var(--spacegrade);
 background-clip: text;
--webkit-text-fill-color: transparent;
+color: transparent;
 text-align: center;
-margin: 32px 0 2%;
 }
 
 .cta {
 margin: 1% 0 2%;
 background: var(--spacegrade);
 background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-.headline2 {
-background: var(--spacegrade);
-background-clip: text;
--webkit-text-fill-color: transparent;
-line-height: 1em;
+color: transparent;
 text-align: center;
-margin: 7% 0 2%;
-opacity: 0;
-display: none;
-}
-
-.cta2 {
-display: none;
-opacity: 0;
-background: var(--spacegrade);
-background-clip: text;
--webkit-text-fill-color: transparent;
-margin: 1% 0 2%;
 }
 
 
@@ -397,7 +385,7 @@ opacity: 0;
 
 #footer {
 padding: 0 7%;
-height: 16%;
+height: 16vh;
 }
 
 .nav-button, .priv-policy-btn {
@@ -464,10 +452,6 @@ h5, button, .nav-button {font-size: 1.125rem;}
 
 small, .text_small {font-size: 0.889rem;}
 
-.earth {
-  right: -200px;
-}
-
 #footeer {
   padding: 0 2%;
 }
@@ -517,10 +501,6 @@ h5, button, .nav-button {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.833rem;}  
 
-.earth {
-  right: -150px;
-}
-
 .nav-logo {
   margin: 1px auto;
   width: 20px;
@@ -564,10 +544,6 @@ h5, button, .nav-button {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
-.earth {
-  right: -50px;
-}
-
 .nav-button {
   margin: 1% 4%;
   width: 15%;
@@ -604,10 +580,6 @@ h4, .brand {font-size: 1.777rem;}
 h5, button, .nav-button {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
-
-.earth {
-  right: 0px;
-}
 
 .nav-logo {
   margin: -4px 5px auto 5px;
