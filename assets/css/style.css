@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Syncopate', sans-serif;
+  src: url('assets/fonts/syncopate-bold-webfont.woff2') format('woff2'),
+  url('assets/fonts/syncopate-bold-webfont.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('assets/fonts/Roboto-Medium-webfont.woff2') format('woff2'),
+  url('assets/fonts/Roboto-Medium-webfont.woff') format('woff');
+  font-style: normal;
+}
+
 :root {
   --nightblue:#10121B ;
   --almostblack:#040404;
@@ -9,8 +23,6 @@
   --transparent: #00000000;
   --newgray: #1f1f1f;
 }
-
-
 
 
 html {
@@ -33,15 +45,12 @@ margin: 10px auto;
 
 .Syncopate {
 font-family: 'Syncopate', sans-serif;
-font-weight: 700;
 color: var(--almostwhite);
 }
 
 .Roboto {
 font-family: 'Roboto', sans-serif;
-font-weight: 400;
 color: var(--almostwhite);
-line-height: 1.5em;
 }
 
 a, button {
