@@ -12,7 +12,8 @@ const prevProject = document.getElementById("prev-arrow");
 const nextProject = document.getElementById("next-arrow");
 const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
 const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
-const screenWidth = window.screen.width / 1.276;
+const spaceRot = window.screen.width;
+const spaceBG = document.querySelector(".space");
 
 
 //fOR yOU
@@ -46,8 +47,8 @@ function forYou(){
 // Space Animation
 const spaceRotation = anime({
     targets: '.space',
-    translateX: screenWidth,
-    duration: 40000,
+    translateX: 1025.8,
+    duration: 30000,
     easing: 'linear',
     loop: true,
 });
