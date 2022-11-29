@@ -42,7 +42,9 @@ body {
 }
 
 .page-title{
-  margin: 10px auto;
+  margin: 14px auto;
+  text-align: center;
+  justify-content: center;
 }
 
 .Syncopate {
@@ -62,13 +64,13 @@ a, button {
 }
 
 .a {
-  display: inline-block;  
+  display: inline-flex;  
   border-radius: 2em;
   background: var(--spacegrade);
   transition: 0.5s;
   width: fit-content;
   margin: 2% 5%;
-  padding: 2px 10px;
+  padding: 3.5px 14px;
 }
 
 .a:hover {
@@ -133,8 +135,8 @@ p {
 }
 
   .link-icon {
-  width: 16px;
-  margin: 0 8px;
+  width: 14px;
+  margin: 0 7px;
 }
 
 
@@ -149,12 +151,12 @@ p {
 }
 
 .brand {
-  margin: 5% 0 auto;
+  margin: auto 0 7px;
   line-height: 1em;
 }
 
 .sm-link {
-  margin: 8px 16px 2px;
+  margin: auto 14px 7px;
   background: var(--transparent);
 }
 
@@ -170,10 +172,10 @@ p {
 }
 
 .l21 {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   padding: 0;
-  margin: 5% 3% 0;
+  margin: auto 14px 7px;
   border-radius: 2em;
   box-sizing: border-box;
   border: 1px solid var(--transparent);
@@ -191,7 +193,7 @@ p {
   width: 100vw;
   box-sizing: border-box;
   border: 1px solid var(--gray);
-  border-radius: 24px;
+  border-radius: 28px;
 }
 
 .content-box {
@@ -199,7 +201,7 @@ p {
   height: fit-content;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 24px;
+  border-radius: 28px;
   background-color: var(--glass);
 }
 
@@ -256,9 +258,10 @@ overflow-y: auto;
 }
 
 .project-section {
-  border: var(--gray);
-  border-radius: 7px;
-  margin: 42px;
+  border: 1px solid var(--gray);
+  border-radius: 28px;
+  margin: 42px 14px;
+  padding: 14px;
 }
 
 .project-row {
@@ -268,9 +271,9 @@ justify-content: center;
 
 .project-selector {
 fill: var(--almostwhite);
-margin: 8px;
-height: 24px;
-width: 24px;
+margin: 7px;
+height: 28px;
+width: 28px;
 cursor: pointer;
 transition: 0.5s;
 }
@@ -280,10 +283,10 @@ fill: var(--almostwhite);
 }
 
 .project-arrows {
-width: 24x;
-height: 24px;
+width: 28x;
+height: 28px;
 fill:  var(--almostwhite);
-margin: 24px;
+margin: 28px;
 cursor: pointer;
 transition: 0.5s;
 }
@@ -293,7 +296,7 @@ fill:  var(--almostwhite);
 }
 
 .project-name {
-margin: 24px 32px;
+margin: 28px 35px;
 }
 
 #project-name-0 {
@@ -312,7 +315,7 @@ display: none;
 width: 25%;
 height: 50%;
 border: 1px solid var(--gray);
-margin: 16px 32px;
+margin: 14px 35px;
 fill: var(--almostwhite);
 }
 
@@ -339,8 +342,8 @@ display: block;
 .project-img {
 opacity: 0.5;
 border-radius: 16px;
-height: 96px;
-width: 96px;
+height: 98px;
+width: 98px;
 margin: auto;
 border: 1px solid var(--gray);
 }
@@ -358,10 +361,10 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 color: var(--almostwhite);
 line-height: 1.5em;
-margin: 8px;
+margin: 7px;
 border: 1px solid var(--almostwhite);
 background-color: var(--transparent);
-border-radius: 24px;
+border-radius: 28px;
 }
 
 label {
@@ -386,13 +389,13 @@ text-align: center;
 
 .form-btn-txt {
 padding: 0;
-margin: 0 16px;
+margin: 0 14px;
 display: inline-block;
 }
 
 .form-btn-icn {
 padding: 0;
-margin: 0 16px 0 0;  
+margin: 0 14px 0 0;  
 display: inline-block;
 width: 24px;
 }
@@ -415,8 +418,8 @@ height: 16vh;
 
 .nav-button, .priv-policy-btn {
 padding: 0.25rem;
-margin: 4px auto;
-width: 160px;
+margin: 3.5px auto;
+width: 140px;
 box-sizing: border-box;
 border: 1px solid var(--transparent);
 }
@@ -425,8 +428,8 @@ border: 1px solid var(--transparent);
 display: inline-block;
 vertical-align: sub;
 padding: 0%;
-width: 16px;
-height: 16px;
+width: 14px;
+height: 14px;
 }
 
 .nav-text {
@@ -446,8 +449,8 @@ margin: 0px;
 display: inline-block;
 vertical-align: sub;
 margin: 0.2rem;
-width: 16px;
-height: 16px;
+width: 14px;
+height: 14px;
 }
 
 
@@ -482,22 +485,26 @@ small, .text_small {font-size: 0.889rem;}
 }
 
 .nav-logo {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 
 .nav-button {
   border: 0;
   margin: 1% 0;
-  width: 50%;
+  width: 154px;
+}
+
+.sm-link {
+  margin: auto 7px 3.5px 3.5px;
 }
 
 .sm-icons {
-  margin: 5% 3% 0;
-  width: 16px;
-  height: 16px;
+  margin: auto 3.5px 3.5px;
+  width: 21px;
+  height: 21px;
 }
 }
 
@@ -527,8 +534,8 @@ small, .text_small {font-size: 0.833rem;}
 
 .nav-logo {
   margin: 1px auto;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
 }
 
 .nav-button {
@@ -538,8 +545,8 @@ small, .text_small {font-size: 0.833rem;}
 
 .sm-icons {
   margin: 5% 3% 0;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 }
 
@@ -574,8 +581,8 @@ small, .text_small {font-size: 0.8rem;}
 
 .sm-icons {
   margin: 0 3% 0;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }  
 }
 
@@ -611,8 +618,8 @@ small, .text_small {font-size: 0.75rem;}
 
 .sm-icons {
   margin: 5% 3% 0;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 
 }
