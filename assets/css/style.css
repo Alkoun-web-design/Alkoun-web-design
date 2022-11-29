@@ -255,6 +255,12 @@ height: 100%;
 overflow-y: auto;
 }
 
+.project-section {
+  border: var(--gray);
+  border-radius: 7px;
+  margin: 42px;
+}
+
 .project-row {
 display: flex;
 justify-content: center;
