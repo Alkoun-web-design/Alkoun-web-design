@@ -134,7 +134,7 @@ p {
   margin: 2% 5%;
 }
 
-  .link-icon {
+.link-icon {
   width: 14px;
   margin: 0 7px;
 }
@@ -224,10 +224,8 @@ p {
 }
 
 .headline {
+  height: 110px;
   line-height: 1em;
-  background: var(--spacegrade);
-  background-clip: text;
-  color: transparent;
   text-align: center;
 }
 
@@ -480,7 +478,16 @@ h5, button, .nav-button {font-size: 1.125rem;}
 
 small, .text_small {font-size: 0.889rem;}
 
-#footeer {
+.l21 {
+  width: 19px;
+  height: 19px;
+}
+
+.headline {
+  height: 50px;
+}
+
+#footer {
   padding: 0 2%;
 }
 
@@ -503,8 +510,8 @@ small, .text_small {font-size: 0.889rem;}
 
 .sm-icons {
   margin: auto 3.5px 3.5px;
-  width: 21px;
-  height: 21px;
+  width: 17px;
+  height: 17px;
 }
 }
 
@@ -532,6 +539,15 @@ h5, button, .nav-button {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.833rem;}  
 
+.l21 {
+  width: 19px;
+  height: 19px;
+}
+
+.headline {
+  height: 80px;
+}
+
 .nav-logo {
   margin: 1px auto;
   width: 21px;
@@ -545,8 +561,8 @@ small, .text_small {font-size: 0.833rem;}
 
 .sm-icons {
   margin: 5% 3% 0;
-  width: 14px;
-  height: 14px;
+  width: 17px;
+  height: 17px;
 }
 }
 
@@ -574,6 +590,16 @@ h5, button, .nav-button {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
+
+.l21 {
+  width: 25px;
+  height: 25px;
+}
+
+.headline {
+  height: 95px;
+}
+
 .nav-button {
   margin: 1% 4%;
   width: 15%;
@@ -581,8 +607,8 @@ small, .text_small {font-size: 0.8rem;}
 
 .sm-icons {
   margin: 0 3% 0;
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
 }  
 }
 
@@ -610,6 +636,11 @@ h5, button, .nav-button {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
 
+.l21 {
+  width: 28px;
+  height: 28px;
+}
+
 .nav-logo {
   margin: 0.15rem;
   width: 18px;
@@ -618,8 +649,8 @@ small, .text_small {font-size: 0.75rem;}
 
 .sm-icons {
   margin: 5% 3% 0;
-  width: 28px;
-  height: 28px;
+  width: 26x;
+  height: 26px;
 }
 
 }
