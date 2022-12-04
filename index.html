@@ -42,14 +42,14 @@
             <img alt="Floating-Astronaut" class="man" src="assets/img/spaceman-min.webp">
  
                     <div id="home">
-                        <audio id="music" controls autoplay>
+                        <audio id="music" controls>
                             <source src="assets/aud/06. Love Rain Down.mp3" type="audio/mpeg">
                         </audio>
 
                         <div class="home-text">
                             
                             <div class="centered">
-                                <img id="line1" class="headline" src="assets/img/Headline2.svg">
+                                <img id="line1" class="headline" src="assets/img/Headline3-min.svg">
                             </div>
                             <div class="centered">
                                 <h3 id="line3" class="Roboto cta">How about giving us a try?</h3>
@@ -67,7 +67,7 @@
                     <div id="about-us">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">About Us</h2>
-                            <div class="Roboto">
+                            <div class="content-section Roboto">
                                 <p>Hi, My name is Hassam Sajid and I am a Web Designer and Developer.  
                                 My journey started as a lawyer in Pakistan, located in the South Asian 
                                 continent next to India and Afghanistan. Life as a lawyer was not as satisfying
@@ -85,7 +85,7 @@
                     <div id="projects">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Projects</h2>
-                            <div class="project-section">
+                            <div class="content-section">
                                 <div class="project-row">
                                     <h3 id="project-name-0" class="Roboto center project-name">Counseling With Iqra</h3>
                                 </div>
@@ -104,7 +104,7 @@
                                     <a href="https://counselingwithiqra.com/" alt="Website-Link" class="Roboto centered"><div class="a"><img class="link-icon" src="assets/img/bx_link-external.svg">counselingwithiqra.com</div></a>
                                 </div>
                             </div> 
-                            <div class="project-section">
+                            <div class="content-section">
                                 <div class="project-row">
                                     <h3 id="project-name-0" class="Roboto center project-name">Stellar Services International</h3>
                                 </div>
@@ -124,7 +124,7 @@
                                     <a href="https://stellarservices.international" alt="Website-Link" class="Roboto centered"><div class="a"><img class="link-icon" src="assets/img/bx_link-external.svg">stellarservices.international</div></a>
                                 </div>
                             </div> 
-                            <div class="project-section">    
+                            <div class="content-section">    
                                 <div class="project-row">
                                     <h3 id="project-name-0" class="Roboto center project-name">Coming Soon</h3>
                                 </div>
@@ -135,22 +135,46 @@
                     <div id="contact-us">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Contact Us</h2>
-                            <div id="form">
+                            <div id="form" class="content-section">
                                 <form action="alkoun-form" method="post">
-                                    <div>
-                                        <label class="form-item Roboto" for="name">Name:</label>
-                                        <input class="form-item Roboto" type="text" id="name" name="user_name" />
+                                    <div class="form-column">
+                                        <div class="form-row">
+                                            <div class="left">
+                                                <label class="Roboto" for="name">Name:</label>
+                                            </div>    
+                                            <div class="centered">
+                                                <input class="Roboto" type="text" id="name" name="user_name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="left">
+                                                <label class="Roboto" for="mail">E-mail:</label>
+                                            </div>
+                                            <div class="centered">
+                                                <input class="Roboto" type="email" id="mail" name="user_email" />
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="left">
+                                                <label class="Roboto" for="subject">Subject:</label>
+                                            </div>
+                                            <div class="centered">
+                                                <input class="Roboto" type="text" id="subject" name="email_subject" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>    
-                                        <label class="form-item Roboto" for="mail">E-mail:</label>
-                                        <input class="form-item Roboto" type="email" id="mail" name="user_email" />
-                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-row">
+                                            <div class="left">
+                                                <label class="Roboto" for="msg">Message:</label>
+                                            </div>
+                                            <div class="centered">
+                                                <textarea class="Roboto" id="msg" name="user_message"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>    
                                     <div>
-                                        <label class="form-item Roboto" for="msg">Message:</label>
-                                        <textarea class="form-item Roboto" id="msg" name="user_message"></textarea>
-                                    </div>
-                                    <div>
-                                    <button class="form-item Roboto form-btn" type="submit"><div class="button"><p class="form-btn-txt">Send Message</p><img class="form-btn-icn" src="assets/img/bx_mail-send.svg"></div></button>
+                                        <button class="Roboto form-btn" type="submit"><div class="button"><p class="form-btn-txt">Send Message</p><img class="form-btn-icn" src="assets/img/bx_mail-send.svg"></div></button>
                                     </div>
                                 </form>
                             </div>
@@ -160,7 +184,7 @@
                     <div id="priv-policy">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Privacy Policy</h2>
-                            <div class="Roboto">
+                            <div class="content-section Roboto">
                                 <p>Our Privacy Policy is straight forward, we do not collect any of our client's
                                     personal data, other than the Messages and Emails sent to Alkoun Web Designs. 
                                     These Emails and Messages will only be stored for the purposes of future

@@ -42,7 +42,7 @@ body {
 }
 
 .page-title{
-  margin: 14px auto;
+  margin: 0.25em auto;
   text-align: center;
   justify-content: center;
 }
@@ -66,11 +66,11 @@ a, button {
 .a {
   display: inline-flex;  
   border-radius: 2em;
-  background: var(--spacegrade);
+  background: var(--almostblack);
   transition: 0.5s;
   width: fit-content;
-  margin: 2% 5%;
-  padding: 3.5px 14px;
+  margin: 1em;
+  padding: 0.25em 1em;
 }
 
 .a:hover {
@@ -83,7 +83,7 @@ a, button {
   border-radius: 2em;
   background: var(--almostblack);
   height: 100%;
-  width: 100%; 
+  width: 100%;
   transition: 0.5s;
 }
 
@@ -94,7 +94,7 @@ a, button {
 .man {
   position: absolute;
   z-index: -1;
-  width: 300px;
+  width: 20em;
   right: 100%;
 }
 
@@ -131,12 +131,23 @@ a, button {
 }
 
 p {
-  margin: 2% 5%;
+  margin: 2em 3em;
+  line-height: 1.6em;
 }
 
 .link-icon {
-  width: 14px;
-  margin: 0 7px;
+  width: 1em;
+  margin: 0 0.5em;
+}
+
+.content-section {
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid var(--gray);
+  border-radius: 2em;
+  margin: 2em auto;
+  padding: 1em;
 }
 
 
@@ -151,17 +162,17 @@ p {
 }
 
 .brand {
-  margin: auto 0 7px;
+  margin: auto 0 0.5em;
   line-height: 1em;
 }
 
 .sm-link {
-  margin: auto 14px 7px;
+  margin: auto 1em 0.5em;
   background: var(--transparent);
 }
 
 .sm-icons {
-  width: 32px;
+  width: 3em;
   fill: var(--almostwhite);
   cursor: pointer;
   transition: 0.5s;
@@ -172,10 +183,10 @@ p {
 }
 
 .l21 {
-  width: 28px;
-  height: 28px;
+  width: 2em;
+  height: 2em;
   padding: 0;
-  margin: auto 14px 7px;
+  margin: auto 1em 0.5em;
   border-radius: 2em;
   box-sizing: border-box;
   border: 1px solid var(--transparent);
@@ -193,7 +204,7 @@ p {
   width: 100vw;
   box-sizing: border-box;
   border: 1px solid var(--gray);
-  border-radius: 28px;
+  border-radius: 2em;
 }
 
 .content-box {
@@ -201,7 +212,7 @@ p {
   height: fit-content;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 28px;
+  border-radius: 2em;
   background-color: var(--glass);
 }
 
@@ -212,7 +223,7 @@ p {
 .home-text {
   height: fit-content;
   width: fit-content;
-  margin: 60px auto auto 0;
+  margin: 5em auto auto 0;
 }
 
 #music {
@@ -224,13 +235,13 @@ p {
 }
 
 .headline {
-  height: 110px;
+  height: 8em;
   line-height: 1em;
   text-align: center;
 }
 
 .cta {
-  margin: 1% 0 2%;
+  margin: 2em 0 2em;
   background: var(--spacegrade);
   background-clip: text;
   color: transparent;
@@ -255,13 +266,6 @@ height: 100%;
 overflow-y: auto;
 }
 
-.project-section {
-  border: 1px solid var(--gray);
-  border-radius: 28px;
-  margin: 42px 14px;
-  padding: 14px;
-}
-
 .project-row {
 display: flex;
 justify-content: center;
@@ -269,9 +273,9 @@ justify-content: center;
 
 .project-selector {
 fill: var(--almostwhite);
-margin: 7px;
-height: 28px;
-width: 28px;
+margin: 0.5em;
+height: 2em;
+width: 2em;
 cursor: pointer;
 transition: 0.5s;
 }
@@ -281,10 +285,10 @@ fill: var(--almostwhite);
 }
 
 .project-arrows {
-width: 28x;
-height: 28px;
+width: 2em;
+height: 2em;
 fill:  var(--almostwhite);
-margin: 28px;
+margin: 2em;
 cursor: pointer;
 transition: 0.5s;
 }
@@ -294,7 +298,7 @@ fill:  var(--almostwhite);
 }
 
 .project-name {
-margin: 28px 35px;
+margin: 0.25em auto;
 }
 
 #project-name-0 {
@@ -313,7 +317,7 @@ display: none;
 width: 25%;
 height: 50%;
 border: 1px solid var(--gray);
-margin: 14px 35px;
+margin: 1em 3em;
 fill: var(--almostwhite);
 }
 
@@ -340,8 +344,8 @@ display: block;
 .project-img {
 opacity: 0.5;
 border-radius: 16px;
-height: 98px;
-width: 98px;
+height: 7em;
+width: 7em;
 margin: auto;
 border: 1px solid var(--gray);
 }
@@ -355,47 +359,53 @@ opacity: 0;
 }
 
 input, textarea {
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-color: var(--almostwhite);
-line-height: 1.5em;
-margin: 7px;
-border: 1px solid var(--almostwhite);
-background-color: var(--transparent);
-border-radius: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--almostwhite);
+  line-height: 1.5em;
+  width: 25em;
+  margin: 0.5em;
+  border: 1px solid var(--almostwhite);
+  background-color: var(--transparent);
+  border-radius: 2em;
 }
 
-label {
-margin: 16px 48px 16px 24px;
+.form-column {
+  display: inline-block;
+  padding: 1.5em;
+  border-left: 1px solid var(--newgray);
 }
 
-input {
-margin: 16px 48px 16px 24px;
+.form-row {
+  display: block;
+  margin: 0.5em 0;
 }
 
 textarea {
-margin: 16px 16px 16px 24px;
-width: 80%;
+  height: 10em;
+  border-radius: 1em;
 }
 
 .form-btn {
-padding: 0;
-margin: auto 4%;
-box-sizing: border-box;
-text-align: center;
+  padding: 0rem;
+  margin: 3.5px auto;
+  width: 11em;
+  box-sizing: border-box;
+  border: 1px solid var(--transparent);
 }
 
 .form-btn-txt {
-padding: 0;
-margin: 0 14px;
-display: inline-block;
+  padding: 0;
+  margin: 0 0.5em;
+  display: inline-block;
 }
 
 .form-btn-icn {
-padding: 0;
-margin: 0 14px 0 0;  
-display: inline-block;
-width: 24px;
+  display: inline-block;
+  vertical-align: sub;
+  padding: 0%;
+  width: 1em;
+  height: 1em;
 }
 
 
@@ -415,9 +425,9 @@ height: 16vh;
 }
 
 .nav-button, .priv-policy-btn {
-padding: 0.25rem;
+padding: 0rem;
 margin: 3.5px auto;
-width: 140px;
+width: 10em;
 box-sizing: border-box;
 border: 1px solid var(--transparent);
 }
@@ -426,8 +436,8 @@ border: 1px solid var(--transparent);
 display: inline-block;
 vertical-align: sub;
 padding: 0%;
-width: 14px;
-height: 14px;
+width: 1em;
+height: 1em;
 }
 
 .nav-text {
@@ -440,15 +450,15 @@ margin: 0;
 display: inline-block;
 font-size: 0.889rem;
 padding: 0%;
-margin: 0px;
+margin: 0;
 }
 
 .pp-logo {
 display: inline-block;
 vertical-align: sub;
 margin: 0.2rem;
-width: 14px;
-height: 14px;
+width: 1em;
+height: 1em;
 }
 
 
@@ -479,6 +489,7 @@ h5, button, .nav-button {font-size: 1.125rem;}
 small, .text_small {font-size: 0.889rem;}
 
 .l21 {
+  margin: auto 3.5px 10px 0px;
   width: 19px;
   height: 19px;
 }
@@ -492,16 +503,17 @@ small, .text_small {font-size: 0.889rem;}
 }
 
 .nav-logo {
-  display: block;
-  margin: 0 auto;
+  display: inline;
+  vertical-align: baseline;
+  margin: 0 0.18em;  
   width: 14px;
   height: 14px;
 }
 
 .nav-button {
-  border: 0;
-  margin: 1% 0;
-  width: 154px;
+
+  margin: 0;
+  width: 10em;
 }
 
 .sm-link {
