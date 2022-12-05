@@ -131,7 +131,7 @@ a, button {
 }
 
 p {
-  margin: 2em 3em;
+  margin: 2em 2em;
   line-height: 1.6em;
 }
 
@@ -252,16 +252,19 @@ p {
 #about-us {
   display: none;
   opacity: 0;
+  height: 100%;
+  overflow-y: auto;
 }
 
 
 
 
 #projects {
-display: none;
-opacity: 0;
-height: 100%;
-overflow-y: auto;
+  display: none;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
 }
 
 .project-row {
@@ -313,7 +316,6 @@ display: none;
 
 .project-img-preview {
 width: 25%;
-height: 50%;
 border: 1px solid var(--gray);
 margin: 1em 3em;
 fill: var(--almostwhite);
@@ -358,7 +360,7 @@ border: 1px solid var(--gray);
   opacity: 0;
 }
 
-form {
+#form {
   display: flex;
 }
 
@@ -407,7 +409,7 @@ textarea {
 .form-btn {
   display: inline; 
   padding: 0rem;
-  margin: 3.5px auto;
+  margin: 0.5em;
   width: 11em;
   border: 1px solid var(--transparent);
 }
@@ -481,7 +483,10 @@ height: 1em;
 
 @media (max-width: 576px) {
 
-  p {margin-bottom: 1rem;}
+  p {
+    margin: 1rem;
+    
+  }
 
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
@@ -503,7 +508,7 @@ height: 1em;
 
   small, .text_small {font-size: 0.889rem;}
 
-  form {
+  #form {
     display: block;
   }
 
@@ -532,6 +537,11 @@ height: 1em;
     height: 50px;
   }
 
+  .project-img-preview {
+    width: 6em;
+    margin: 1em 0.5em;
+  }
+
   #footer {
     padding: 0 2%;
   }
@@ -545,8 +555,12 @@ height: 1em;
   }
 
   .nav-button {
-    margin: 0;
+    margin: 0.25 0;
     width: 10em;
+  }
+
+  .priv-policy-btn {
+    margin: 0.25em auto;
   }
 
   .sm-link {
@@ -591,7 +605,7 @@ height: 1em;
 
   small, .text_small {font-size: 0.889rem;}
 
-  form {
+  #form {
     display: block;
   }
 
@@ -620,6 +634,11 @@ height: 1em;
     height: 50px;
   }
 
+  .project-img-preview {
+    width: 6em;
+    margin: 1em 0.5em;
+  }
+
   #footer {
     padding: 0 2%;
   }
@@ -633,8 +652,12 @@ height: 1em;
   }
 
   .nav-button {
-    margin: 0;
+    margin: 0.25 0;
     width: 10em;
+  }
+
+  .priv-policy-btn {
+    margin: 0.5em auto;
   }
 
   .sm-link {
@@ -679,7 +702,7 @@ height: 1em;
 
   small, .text_small {font-size: 0.833rem;}
 
-  form {
+  #form {
     display: flex;
   }
 
@@ -707,9 +730,14 @@ height: 1em;
     height: 80px;
   }
 
+  .project-img-preview {
+    width: 10em;
+    margin: 1em 2em;
+  }
+
   .nav-button {
-    margin: 1% 0;
-    width: 50%;
+    margin: 0.25em 1em;
+    width: 10em;
   }
 
   .sm-link {
@@ -732,7 +760,7 @@ height: 1em;
 
 @media (min-width: 992px) {
 
-  p {margin-bottom: 1rem;}
+  p {margin:1rem 2rem;}
 
   h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
@@ -753,10 +781,6 @@ height: 1em;
   h5, button, .nav-button {font-size: 1.25rem;}
 
   small, .text_small {font-size: 0.8rem;}
-
-  form {
-    display: flex;
-  }
 
   .form-column {
     display: inline-block;
@@ -782,14 +806,19 @@ height: 1em;
     height: 95px;
   }
 
+  .project-img-preview {
+    width: 13em;
+    margin: 1em 3em;
+  }
+
   .nav-logo {
     height: 1em;
     width: 1em;
   }
 
   .nav-button {
-    margin: 1% 4%;
-    width: 15%;
+    margin: 0.25em 1em;
+    width: 10em;
   }
 
   .sm-icons {
@@ -830,10 +859,6 @@ height: 1em;
 
   small, .text_small {font-size: 0.75rem;}
 
-  form {
-    display: flex;
-  }
-
   .form-column {
     display: inline-block;
     padding: 1.5em;
@@ -852,6 +877,11 @@ height: 1em;
   .l21 {
     width: 28px;
     height: 28px;
+  }
+
+  .project-img-preview {
+    width: 15em;
+    margin: 1em 3em;
   }
 
   .nav-logo {
