@@ -373,7 +373,7 @@ input, textarea {
   margin: 0.5em;
   border: 1px solid var(--newgray);
   background-color: var(--transparent);
-  border-radius: 2em;
+  border-radius: 1em;
 }
 
 input:hover, textarea:hover {
