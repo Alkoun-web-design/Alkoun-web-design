@@ -25,7 +25,7 @@ function sendEmail() {
     Host : "smtp.gmail.com",
     Username : gmailUser,
     Password : "mjzljowuyrqawpkt",
-    To : emailE,
+    To : gmailUser,
     From : document.getElementById("email").value,
     Subject : document.getElementById("subject").value,
     Body : "Name:" + document.getElementById("name").value
