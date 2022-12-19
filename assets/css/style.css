@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Syncopate', sans-serif;
-  src: url('assets/fonts/Syncopate-Bold.woff2') format('woff2');
+  font-family: "Syncopate", sans-serif;
+  src: url("assets/fonts/Syncopate-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url('assets/fonts/RobotoCondensed-Regular.woff') format('woff');
+  font-family: "Roboto", sans-serif;
+  src: url("assets/fonts/RobotoCondensed-Regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -49,12 +49,12 @@ body {
 }
 
 .Syncopate {
-  font-family: 'Syncopate', sans-serif;
+  font-family: "Syncopate", sans-serif;
   color: var(--almostwhite);
 }
 
 .Roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--almostwhite);
 }
 
