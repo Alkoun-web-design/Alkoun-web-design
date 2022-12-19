@@ -401,10 +401,7 @@ input:active, textarea:active {
   margin: 0.5em 0;
 }
 
-textarea {
-  height: 10em;
-  border-radius: 1em;
-}
+
 
 .form-btn {
   display: inline; 
