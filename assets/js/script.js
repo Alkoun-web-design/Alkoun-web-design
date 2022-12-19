@@ -14,6 +14,26 @@ const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
 const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
 const spaceRot = window.screen.width;
 const spaceBG = document.querySelector(".space");
+const emailE = ('alkoun.web.designs@' + 'proton.me');
+const gmailUser = ('hassam.sajid.dvlpr@' + 'gmail.com');
+document.write('<a href="mailto:' + emailE + '">' + emailE + '</a>')
+
+
+//SMTP Email
+function sendEmail() {
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : gmailUser,
+    Password : "mjzljowuyrqawpkt",
+    To : emailE,
+    From : document.getElementById("email").value,
+    Subject : document.getElementById("subject").value,
+    Body : "Name:" + document.getElementById("name").value
+    + "<br>Message:" + document.getElementById("message").value
+  }).then(
+  message => alert("Message sent successfully!")
+  );
+};
 
 
 //fOR yOU

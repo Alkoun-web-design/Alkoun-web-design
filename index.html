@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="assets/css/style.css"> 
         <script src="assets/js/anime.min.js"></script>
         <script src="assets/js/script.js" async></script>
-
+        <script src="assets/js/smtp.js"></script>
     </head>
     <body>
 
@@ -136,7 +136,7 @@
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Contact Us</h2>
                             
-                                <form action="https://formspree.io/f/xqkjrkzv" method="post">
+                                <form onsubmit="sendEmail(); reset(); return false" action="https://formspree.io/f/xqkjrkzv" method="post">
                                     <div class="content-section">
                                         <div id="form">
                                             <div class="form-column">
@@ -153,7 +153,7 @@
                                                         <label class="Roboto" for="mail">E-mail:</label>
                                                     </div>
                                                     <div class="centered">
-                                                        <input class="Roboto" type="email" id="mail" name="user_email" />
+                                                        <input class="Roboto" type="email" id="email" name="user_email" />
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
@@ -168,10 +168,10 @@
                                             <div class="form-column">
                                                 <div class="form-row">
                                                     <div class="left">
-                                                        <label class="Roboto" for="msg">Message:</label>
+                                                        <label class="Roboto" for="message">Message:</label>
                                                     </div>
                                                     <div class="centered">
-                                                        <textarea class="Roboto" id="msg" name="user_message"></textarea>
+                                                        <textarea class="Roboto" id="message" name="user_message"></textarea>
                                                     </div>
                                                 </div>
                                             </div> 
