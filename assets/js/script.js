@@ -23,9 +23,9 @@ document.write('<a href="mailto:' + emailE + '">' + emailE + '</a>')
 function sendEmail() {
   Email.send({
     Host : "smtp.gmail.com",
-    Username : "hassam.sajid.dvlpr@" + "gmail.com",
+    Username : "hassam.sajid.dvlpr@gmail.com",
     Password : "mjzljowuyrqawpkt",
-    To : "hassam.sajid.dvlpr@" + "gmail.com",
+    To : "hassam.sajid.dvlpr@gmail.com",
     From : document.getElementById("email").value,
     Subject : document.getElementById("subject").value,
     Body : "Name:" + document.getElementById("name").value
