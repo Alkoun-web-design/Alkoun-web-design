@@ -10,7 +10,6 @@
         
         <link rel="stylesheet" href="assets/css/style.css"> 
         <script src="assets/js/anime.min.js"></script>
-        <script src="assets/js/script.js" async></script>
         <script src="assets/js/smtp.js"></script>
     </head>
     <body>
@@ -32,7 +31,7 @@
                 <a href="" class="sm-link"><svg alt="Instagram-Page-link" class="sm-icons"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 1H3C1.9 1 1 1.9 1 3V17C1 18.101 1.9 19 3 19H17C18.1 19 19 18.101 19 17V3C19 1.9 18.1 1 17 1ZM9.984 15.523C11.4529 15.5227 12.8615 14.939 13.9 13.9003C14.9386 12.8616 15.522 11.4529 15.522 9.984C15.522 9.646 15.479 9.32 15.419 9H17V16.216C17 16.3069 16.9821 16.3968 16.9472 16.4807C16.9123 16.5647 16.8612 16.6409 16.7968 16.705C16.7325 16.7691 16.656 16.8198 16.572 16.8543C16.4879 16.8888 16.3979 16.9064 16.307 16.906H3.693C3.60214 16.9064 3.51209 16.8888 3.42803 16.8543C3.34397 16.8198 3.26755 16.7691 3.20316 16.705C3.13877 16.6409 3.08767 16.5647 3.05281 16.4807C3.01795 16.3968 3 16.3069 3 16.216V9H4.549C4.488 9.32 4.445 9.646 4.445 9.984C4.44527 11.453 5.02892 12.8617 6.06763 13.9004C7.10633 14.9391 8.51505 15.5227 9.984 15.523V15.523ZM6.523 9.984C6.523 9.5295 6.61252 9.07944 6.78645 8.65953C6.96038 8.23962 7.21532 7.85809 7.5367 7.5367C7.85809 7.21532 8.23962 6.96038 8.65953 6.78645C9.07944 6.61252 9.5295 6.523 9.984 6.523C10.4385 6.523 10.8886 6.61252 11.3085 6.78645C11.7284 6.96038 12.1099 7.21532 12.4313 7.5367C12.7527 7.85809 13.0076 8.23962 13.1815 8.65953C13.3555 9.07944 13.445 9.5295 13.445 9.984C13.445 10.9019 13.0804 11.7822 12.4313 12.4313C11.7822 13.0804 10.9019 13.445 9.984 13.445C9.06609 13.445 8.18577 13.0804 7.5367 12.4313C6.88764 11.7822 6.523 10.9019 6.523 9.984V9.984ZM16.307 6H14.692C14.5086 5.99947 14.3329 5.9264 14.2033 5.79673C14.0736 5.66707 14.0005 5.49137 14 5.308V3.691C14 3.309 14.31 3 14.691 3H16.306C16.69 3 17 3.309 17 3.691V5.307C17 5.688 16.69 6 16.307 6Z"/>
                 </svg></a>
-                <button class="l21" onclick="forYou()"><div class="button"></div></button>
+                <button class="l21"><div class="button"></div></button>
             </div>
         </header>
 
@@ -41,7 +40,7 @@
             <img alt="Earth-Image" class="earth" src="assets/img/earth0.webp">
             <img alt="Floating-Astronaut" class="man" src="assets/img/spaceman-min.webp">
  
-                    <div id="home">
+                    <div id="home" class="visible">
                         <audio id="music" controls>
                             <source src="assets/aud/06. Love Rain Down.mp3" type="audio/mpeg">
                         </audio>
@@ -64,7 +63,7 @@
                     </div>
 
                     
-                    <div id="about-us">
+                    <div id="about-us" class="invisible">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">About Us</h2>
                             <div class="content-section Roboto">
@@ -82,7 +81,7 @@
                     </div>
 
 
-                    <div id="projects">
+                    <div id="projects" class="invisible">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Projects</h2>
                             <div class="content-section">
@@ -132,7 +131,7 @@
                         </div>   
                     </div>  
 
-                    <div id="contact-us">
+                    <div id="contact-us" class="invisible">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Contact Us</h2>
                             
@@ -185,7 +184,7 @@
                         </div>
                     </div>
 
-                    <div id="priv-policy">
+                    <div id="privacy-policy" class="invisible">
                         <div class="content-box">
                             <h2 class="Syncopate page-title">Privacy Policy</h2>
                             <div class="content-section Roboto">
@@ -211,17 +210,17 @@
 
         <footer id="footer" class="">
             <div class="centered">
-                <button id="homebtn" class="Roboto nav-button" title="Home-Button" onclick="showHome()"><div class="button"><img alt="Home-Icon" class="nav-logo" src="assets/img/home.svg"><p class="nav-text">Home</p></div></button>
-                <button id="aboutusbtn" class="Roboto nav-button" title="Aboout-Us-Button" onclick="showAboutUs()"><div class="button"><img alt="About-Us-Icon" class="nav-logo" src="assets/img/bx_meteor.svg"><p class="nav-text">About Us</p></div></button>
-                <button id="projectsbtn" class="Roboto nav-button" title="Projects-Button" onclick="showProjects()"><div class="button"><img alt="Projects-Icon" class="nav-logo" src="assets/img/bx_collection.svg"><p class="nav-text">Projects</p></div></button>
-                <button id="contactusbtn" class="Roboto nav-button" title="Contact-Us-Button" onclick="showContactUs()"><div class="button"><img alt="Contact-Us-Icon" class="nav-logo" src="assets/img/bx_conversation.svg"><p class="nav-text">Contact Us</p></div></button>
+                <button id="home-btn" class="Roboto nav-button" title="Home-Button"><div class="button"><img alt="Home-Icon" class="nav-logo" src="assets/img/home.svg"><p class="nav-text">Home</p></div></button>
+                <button id="about-us-btn" class="Roboto nav-button" title="Aboout-Us-Button"><div class="button"><img alt="About-Us-Icon" class="nav-logo" src="assets/img/bx_meteor.svg"><p class="nav-text">About Us</p></div></button>
+                <button id="projects-btn" class="Roboto nav-button" title="Projects-Button"><div class="button"><img alt="Projects-Icon" class="nav-logo" src="assets/img/bx_collection.svg"><p class="nav-text">Projects</p></div></button>
+                <button id="contact-us-btn" class="Roboto nav-button" title="Contact-Us-Button"><div class="button"><img alt="Contact-Us-Icon" class="nav-logo" src="assets/img/bx_conversation.svg"><p class="nav-text">Contact Us</p></div></button>
             </div>
             <div class="centered">
-                <button id="ppbtn" class="Roboto priv-policy-btn" title="Privacy-Policy-Button" onclick="showPrivPolicy()"><div class="button"><img alt="Privacy-Policy-Icon" class="pp-logo" src="assets/img/bx_layer.svg"><p class="pp-text">Privacy Policy</p></div></button>   
+                <button id="privacy-policy-btn" class="Roboto priv-policy-btn" title="Privacy-Policy-Button"><div class="button"><img alt="Privacy-Policy-Icon" class="pp-logo" src="assets/img/bx_layer.svg"><p class="pp-text">Privacy Policy</p></div></button>   
             </div>
         </footer>
 
         
-
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
