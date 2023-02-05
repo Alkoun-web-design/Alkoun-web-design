@@ -22,9 +22,6 @@ forYou.addEventListener('click', function(){
     easing: 'linear',
     opacity: 0,
   });
-});
-
-forYou.addEventListener('click', function(){ 
   anime({
     targets: '#music, #line2, #line4',
     delay: 6000, 
@@ -33,6 +30,10 @@ forYou.addEventListener('click', function(){
     opacity: 1,
   });
 });
+
+
+
+console.log(spaceBG.getBoundingClientRect);
 
 
 // Space Animation
