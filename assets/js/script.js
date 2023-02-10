@@ -14,7 +14,7 @@ const spaceBG = document.querySelector(".space");
 //fOR yOU
 
 const forYou = document.querySelector(".l21");
-forYou.addEventListener('click', function(){ 
+forYou.addEventListener('click', () => { 
   anime({
     targets: '#header, #footer, #home, #projects, #contact-us, #about-us, #privacy-policy',
     delay: 3000, 
