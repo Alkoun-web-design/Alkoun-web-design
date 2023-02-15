@@ -56,6 +56,14 @@ const lyric = [`There's a thirst deep inside of me I can't control`,
 const heart = document.querySelector('#heart');
 const heartPath = document.querySelector('#heart-path');
 const brushH1 = document.querySelector('.brush h1');
+const brush = document.querySelector('.brush');
+const h1Delay = [14000, 17000, 23000, 37000, 45000, 45000, 52000,
+                59500, 66000, 71000, 74500, 81000, 89000, 95500,
+                102500, 110000, 117000, 124500, 132000, 138000,
+                144000, 152000, 159000, 166000, 173000, 180000,
+                187000, 194000]
+const pages = ["#home", "#projects", "#about-us", "#contact-us", "#privacy-policy",]; 
+const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
 
 
 
@@ -88,40 +96,51 @@ const bodyBG = () => {
   bodyHTML.style.background = 'linear-gradient(180deg, rgba(16,22,44,1) 10%, rgba(39,39,67,1) 55%, rgba(81,67,82,1) 100%)';
 };
 
+homeanime = animation(homeElements, fadeIn, null, null, 0, 2000, false)
 
 music.onplay = (event) => {
-
   animation(heart, fadeInOut, null, null, 0, 4000, true);
   animation(heartPath, colorIn, null, null, 0, 210000, false);
-  setTimeout(vAnimation(5000, lyric[0]), 14000, 
-    setTimeout(vAnimation(7000, lyric[1]), 17000))
+  let activeH1 = document.querySelector("h1.active");
+  let nextH1 = activeH1.nextElementSibling;
+    for (let i = 0; i < h1Delay.length; i++) {
+      brushH1.innerHTML=lyric[i];
+      animation(lyric[i], fadeInOut, null, null, h1Delay[i], 6000, false)
+      console.log(i);
+      console.log(h1Delay[i]);
+      console.log(activeH1);
+      console.log(nextH1);
+  }; 
+
+  // setTimeout(vAnimation(5000, lyric[0]), 14000, 
+  //   setTimeout(vAnimation(7000, lyric[1]), 17000))
   
-  setTimeout(vAnimation(5000, lyric[2]), 23000);
-  setTimeout(vAnimation(7000, lyric[3]), 37000)
-  setTimeout(vAnimation(7000, lyric[4]), 45000) 
-  setTimeout(vAnimation(7000, lyric[5]), 45000)
-  setTimeout(vAnimation(7000, lyric[6]), 52000) 
-  setTimeout(vAnimation(6000, lyric[7]), 59500)
-  setTimeout(vAnimation(3000, lyric[8]), 66000) 
-  setTimeout(vAnimation(2000, lyric[9]), 71000) 
-  setTimeout(vAnimation(6000, lyric[10]), 74500)
-  setTimeout(vAnimation(6000, lyric[11]), 81000)
-  setTimeout(vAnimation(6000, lyric[12]), 89000)
-  setTimeout(vAnimation(6000, lyric[13]), 95500)
-  setTimeout(vAnimation(7000, lyric[14]), 102500)
-  setTimeout(vAnimation(7000, lyric[15]), 110000) 
-  setTimeout(vAnimation(6000, lyric[16]), 117000) 
-  setTimeout(vAnimation(6000, lyric[17]), 124500)
-  setTimeout(vAnimation(6000, lyric[18]), 132000)
-  setTimeout(vAnimation(6000, lyric[19]), 138000)
-  setTimeout(vAnimation(6000, lyric[20]), 144000)
-  setTimeout(vAnimation(6000, lyric[21]), 152000) 
-  setTimeout(vAnimation(6000, lyric[22]), 159000)
-  setTimeout(vAnimation(6000, lyric[23]), 166000)
-  setTimeout(vAnimation(6000, lyric[24]), 173000)
-  setTimeout(vAnimation(6000, lyric[25]), 180000)
-  setTimeout(vAnimation(6000, lyric[26]), 187000) 
-  setTimeout(vAnimation(6000, lyric[27]), 194000)
+  // setTimeout(vAnimation(5000, lyric[2]), 23000);
+  // setTimeout(vAnimation(7000, lyric[3]), 37000)
+  // setTimeout(vAnimation(7000, lyric[4]), 45000) 
+  // setTimeout(vAnimation(7000, lyric[5]), 45000)
+  // setTimeout(vAnimation(7000, lyric[6]), 52000) 
+  // setTimeout(vAnimation(6000, lyric[7]), 59500)
+  // setTimeout(vAnimation(3000, lyric[8]), 66000) 
+  // setTimeout(vAnimation(2000, lyric[9]), 71000) 
+  // setTimeout(vAnimation(6000, lyric[10]), 74500)
+  // setTimeout(vAnimation(6000, lyric[11]), 81000)
+  // setTimeout(vAnimation(6000, lyric[12]), 89000)
+  // setTimeout(vAnimation(6000, lyric[13]), 95500)
+  // setTimeout(vAnimation(7000, lyric[14]), 102500)
+  // setTimeout(vAnimation(7000, lyric[15]), 110000) 
+  // setTimeout(vAnimation(6000, lyric[16]), 117000) 
+  // setTimeout(vAnimation(6000, lyric[17]), 124500)
+  // setTimeout(vAnimation(6000, lyric[18]), 132000)
+  // setTimeout(vAnimation(6000, lyric[19]), 138000)
+  // setTimeout(vAnimation(6000, lyric[20]), 144000)
+  // setTimeout(vAnimation(6000, lyric[21]), 152000) 
+  // setTimeout(vAnimation(6000, lyric[22]), 159000)
+  // setTimeout(vAnimation(6000, lyric[23]), 166000)
+  // setTimeout(vAnimation(6000, lyric[24]), 173000)
+  // setTimeout(vAnimation(6000, lyric[25]), 180000)
+  // setTimeout(vAnimation(6000, lyric[26]), 187000) 
+  // setTimeout(vAnimation(6000, lyric[27]), 194000)
 };
 
 const sparklingStars = () => {
@@ -186,19 +205,17 @@ const spacemanRotation = animation('.man', null, 3000, null, 0, 50000, true);
 }*/
 
 // Navigation
-const pages = ["#home", "#projects", "#about-us", "#contact-us", "#privacy-policy",] 
-const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
 const showPage = function(){
   for (let navButton of navButtons) {
     if (navButton.includes(this.id)) {
       for (let page of pages) {
         if (navButton.includes(page)){
-          document.querySelector(page).classList.add('visible');
-          document.querySelector(page).classList.remove('invisible');
+          document.querySelector(page).classList.add('active');
+          document.querySelector(page).classList.remove('inactive');
           animation(page, fadeIn, null, null, 0, 1000, false);
         } else {
-          document.querySelector(page).classList.add('invisible');
-          document.querySelector(page).classList.remove('visible');
+          document.querySelector(page).classList.add('inactive');
+          document.querySelector(page).classList.remove('active');
           animation(page, fadeOut, null, null, 0, 500, false);
         }
       }  
@@ -206,9 +223,9 @@ const showPage = function(){
   }
 };
 
-document.getElementById("home-btn").addEventListener('click', showPage);
-document.getElementById("projects-btn").addEventListener('click', showPage);
-document.getElementById("about-us-btn").addEventListener('click', showPage);
-document.getElementById("contact-us-btn").addEventListener('click', showPage);
-document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
+document.querySelector("#home-btn").addEventListener('click', showPage);
+document.querySelector("#projects-btn").addEventListener('click', showPage);
+document.querySelector("#about-us-btn").addEventListener('click', showPage);
+document.querySelector("#contact-us-btn").addEventListener('click', showPage);
+document.querySelector("#privacy-policy-btn").addEventListener('click', showPage);
 
