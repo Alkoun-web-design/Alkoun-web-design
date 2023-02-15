@@ -1,73 +1,191 @@
-
-
-const l2 = document.getElementById("line2");
-const l4 = document.getElementById("line4");
-const l1 = document.getElementById("line1");
-const l3 = document.getElementById("line3");
 const man = document.querySelector(".man");
-
+const stars = document.querySelectorAll('#stars path');
 const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
 const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
 const spaceBG = document.querySelector(".space");
+const homeElements = ['#line1','#line2']
+// const spaceArea = spaceBG.getBoundingClientRect();
+// const spaceTranslateX = spaceArea.right - spaceArea.left;
+const oldUI = [spaceBG, '.earth', '.man', '#header', '#footer', '#home', '#projects', '#contact-us', '#about-us', '#privacy-policy']
+const newUI = ['#newHome','#stars']; 
+const newHome = document.querySelector('#newHome');
+const starsBG = document.querySelector('#stars');
+const fadeInOut = [{opacity: 0},{opacity: 1},{opacity: 0}];
+const fadeOut = [{opacity: 1},{opacity: 0}]
+const fadeIn = [{opacity: 0},{opacity: 1}]
+const colorIn = [{fill: '#f4f4f4'},{fill: '#af1818'}]
+const music = document.querySelector('audio');
+const vanisher = document.querySelector(".l21");
+const nameInput = document.querySelector('.ui-input');
+const input = document.querySelector('.ui-input input');
+const bodyHTML = document.querySelector('body');
+const changer = document.querySelector('#changeButton');
+const lyric = [`There's a thirst deep inside of me I can't control`,
+              `There's a desert underneath that cracks my bones`,
+              `There's a river that runs dry within my heart`,
+              `There's a distance to your light that seems too far`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let it wash away the sorrows I've found`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `There's a storm within my <span class="l-word">heart</span> that needs you now`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `<span class="l-word">Love</span> rain down`,
+              `<span class="l-word">Love</span> rain down`,
+              `There's a craving that will never come to pass`,
+              `There's a hunger that will never cease to last`,
+              `There's a aching that lies deep within my <span class="l-word">soul</span>`,
+              `For the promise that someday I could be whole`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let it wash away the sorrows I've found`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `There's a storm within my <span class="l-word">heart</span> that needs you now`,
+              `That needs you now`,
+              `And the fire inside is burning`,
+              `That this <span class="l-word">heart</span> cannot contain`,
+              `Know that I'm still longing`,
+              `Like the dry earth longs for the rain`,
+              `Yeah, yeah`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let it wash away the sorrows I've found`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `There's a storm within my <span class="l-word">heart</span> that needs you now`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `<span class="l-word">Love</span> rain down`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let your <span class="l-word">love</span> rain down, rain down, rain down, rain down, yeah`]
+const heart = document.querySelector('#heart');
+const heartPath = document.querySelector('#heart-path');
+const brushH1 = document.querySelector('.brush h1');
 
 
-//fOR yOU
 
-const forYou = document.querySelector(".l21");
-forYou.addEventListener('click', () => { 
+
+const vAnimation = (targetDuration, lyricNum, callback) => {
+  brushH1.innerHTML=lyricNum;
   anime({
-    targets: '#header, #footer, #home, #projects, #contact-us, #about-us, #privacy-policy',
-    delay: 3000, 
-    duration: 2000,
+    targets: brushH1,
+    keyframes: fadeInOut,
+    duration: targetDuration,
     easing: 'linear',
-    opacity: 0,
   });
+  callback;
+}
+
+const animation = (targetElement, targetKeyframes, moveX, moveY, targetDelay, targetDuration, isLoop) => {
   anime({
-    targets: '#music, #line2, #line4',
-    delay: 6000, 
-    duration: 2000,
+    targets: targetElement,
+    keyframes: targetKeyframes,
+    translateX: moveX,
+    translateY: moveY, 
+    delay: targetDelay,
+    duration: targetDuration,
+    loop: isLoop,
     easing: 'linear',
-    opacity: 1,
   });
+}
+
+const bodyBG = () => {
+  bodyHTML.style.background = 'linear-gradient(180deg, rgba(16,22,44,1) 10%, rgba(39,39,67,1) 55%, rgba(81,67,82,1) 100%)';
+};
+
+
+music.onplay = (event) => {
+
+  animation(heart, fadeInOut, null, null, 0, 4000, true);
+  animation(heartPath, colorIn, null, null, 0, 210000, false);
+  setTimeout(vAnimation(5000, lyric[0]), 14000, 
+    setTimeout(vAnimation(7000, lyric[1]), 17000))
+  
+  setTimeout(vAnimation(5000, lyric[2]), 23000);
+  setTimeout(vAnimation(7000, lyric[3]), 37000)
+  setTimeout(vAnimation(7000, lyric[4]), 45000) 
+  setTimeout(vAnimation(7000, lyric[5]), 45000)
+  setTimeout(vAnimation(7000, lyric[6]), 52000) 
+  setTimeout(vAnimation(6000, lyric[7]), 59500)
+  setTimeout(vAnimation(3000, lyric[8]), 66000) 
+  setTimeout(vAnimation(2000, lyric[9]), 71000) 
+  setTimeout(vAnimation(6000, lyric[10]), 74500)
+  setTimeout(vAnimation(6000, lyric[11]), 81000)
+  setTimeout(vAnimation(6000, lyric[12]), 89000)
+  setTimeout(vAnimation(6000, lyric[13]), 95500)
+  setTimeout(vAnimation(7000, lyric[14]), 102500)
+  setTimeout(vAnimation(7000, lyric[15]), 110000) 
+  setTimeout(vAnimation(6000, lyric[16]), 117000) 
+  setTimeout(vAnimation(6000, lyric[17]), 124500)
+  setTimeout(vAnimation(6000, lyric[18]), 132000)
+  setTimeout(vAnimation(6000, lyric[19]), 138000)
+  setTimeout(vAnimation(6000, lyric[20]), 144000)
+  setTimeout(vAnimation(6000, lyric[21]), 152000) 
+  setTimeout(vAnimation(6000, lyric[22]), 159000)
+  setTimeout(vAnimation(6000, lyric[23]), 166000)
+  setTimeout(vAnimation(6000, lyric[24]), 173000)
+  setTimeout(vAnimation(6000, lyric[25]), 180000)
+  setTimeout(vAnimation(6000, lyric[26]), 187000) 
+  setTimeout(vAnimation(6000, lyric[27]), 194000)
+};
+
+const sparklingStars = () => {
+  for (let star of stars){
+    let randDelay = (Math.random()*1000);
+    animation(star, fadeIn, null, null, randDelay, 1000, true)
+}};
+
+
+
+
+// const spaceAnimation = () => {
+//   if (innerWidth === 980) {
+//     return 980
+//   } else if (innerWidth > 980) {
+//     return innerWidth / 1.4
+//   } else if (innerWidth > 980) {
+//     return innerWidth * 1.4
+//   } 
+// }
+
+// if (translatex >  980){
+//   980-0.92 translatex -0.92;
+// }
+
+// const sapceAnime = () => {
+//   if(spaceTranslateX < 982){
+//   spaceTranslateX - 1 % 
+//   };
+// };
+
+
+// fOR yOU
+vanisher.addEventListener('click', function(){
+  nameInput.style.display='block';
+  animation(nameInput, fadeIn, null, null, 0, 500, false);
 });
 
-
-
-console.log(spaceBG.getBoundingClientRect);
+changer.addEventListener('click', function(){
+  if(input.value.toLowerCase()==='lezan'){
+    animation(oldUI, fadeOut, null, null, 3000, 2000, false) 
+    newHome.style.display='block';
+    starsBG.style.display='block';
+    setTimeout(bodyBG, 4000)
+    animation('.ui-input', fadeOut, null, null, 4000, 2000, false);
+    animation(newUI, fadeIn, null, null, 6000, 2000, false)
+    sparklingStars();
+  } else {
+    animation('#message', fadeInOut, null, null, 0, 6000, false);
+  }
+});
 
 
 // Space Animation
-const spaceRotation = anime({
-    targets: '.space',
-    translateX: innerWidth,
-    duration: 30000,
-    easing: 'linear',
-    loop: true,
-});
+const spaceRotation = animation('.space', null, 980, null, 0, 30000, true);
 
-const spacemanRotation = anime({
-  delay: 8000,
-  targets: '.man',
-  translateX: 3000,
-  duration: 50000,
-  easing: 'linear',
-  loop: true,
-});
-
-
-// Page Contents Fading In
-const pageFadeIn = anime({
-  delay: 1000,
-  targets: '#line1, #line3',
-  duration: 8000,
-  opacity: 1,
-});
+// Spaceman Animation
+const spacemanRotation = animation('.man', null, 3000, null, 0, 50000, true);
 
 /*function hide(evt){
   evt.target.style.visibility = 'hidden';
 }*/
 
-
+// Navigation
 const pages = ["#home", "#projects", "#about-us", "#contact-us", "#privacy-policy",] 
 const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
 const showPage = function(){
@@ -75,11 +193,13 @@ const showPage = function(){
     if (navButton.includes(this.id)) {
       for (let page of pages) {
         if (navButton.includes(page)){
-          document.querySelector(page).classList.add('visible')
-          document.querySelector(page).classList.remove('invisible')
+          document.querySelector(page).classList.add('visible');
+          document.querySelector(page).classList.remove('invisible');
+          animation(page, fadeIn, null, null, 0, 1000, false);
         } else {
-          document.querySelector(page).classList.add('invisible')
-          document.querySelector(page).classList.remove('visible')
+          document.querySelector(page).classList.add('invisible');
+          document.querySelector(page).classList.remove('visible');
+          animation(page, fadeOut, null, null, 0, 500, false);
         }
       }  
     }
@@ -92,14 +212,3 @@ document.getElementById("about-us-btn").addEventListener('click', showPage);
 document.getElementById("contact-us-btn").addEventListener('click', showPage);
 document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
 
-/*
-
-function showPrivPolicy() {
-  anime({
-    delay: 50,
-    targets: '#priv-policy',
-    duration: 8000,
-    opacity: 1,
-  });
-
-*/
