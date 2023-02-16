@@ -20,7 +20,7 @@ const nameInput = document.querySelector('.ui-input');
 const input = document.querySelector('.ui-input input');
 const bodyHTML = document.querySelector('body');
 const changer = document.querySelector('#changeButton');
-const lyric = [`There's a thirst deep inside of me I can't control`,
+const lyrics = [`There's a thirst deep inside of me I can't control`,
               `There's a desert underneath that cracks my bones`,
               `There's a river that runs dry within my heart`,
               `There's a distance to your light that seems too far`,
@@ -55,6 +55,7 @@ const lyric = [`There's a thirst deep inside of me I can't control`,
               `Let your <span class="l-word">love</span> rain down, rain down, rain down, rain down, yeah`]
 const heart = document.querySelector('#heart');
 const heartPath = document.querySelector('#heart-path');
+const lyricH1s = document.querySelectorAll('.brush h1');
 const brushH1 = document.querySelector('.brush h1');
 const brush = document.querySelector('.brush');
 const h1Delay = [14000, 17000, 23000, 37000, 45000, 45000, 52000,
@@ -101,19 +102,8 @@ homeanime = animation(homeElements, fadeIn, null, null, 0, 2000, false)
 music.onplay = (event) => {
   animation(heart, fadeInOut, null, null, 0, 4000, true);
   animation(heartPath, colorIn, null, null, 0, 210000, false);
-  let activeH1 = document.querySelector("h1.active");
-  let nextH1 = activeH1.nextElementSibling;
-    for (let i = 0; i < h1Delay.length; i++) {
-      brushH1.innerHTML=lyric[i];
-      animation(lyric[i], fadeInOut, null, null, h1Delay[i], 6000, false)
-      console.log(i);
-      console.log(h1Delay[i]);
-      console.log(activeH1);
-      console.log(nextH1);
-  }; 
-
-  // setTimeout(vAnimation(5000, lyric[0]), 14000, 
-  //   setTimeout(vAnimation(7000, lyric[1]), 17000))
+  animation(lyricH1s, fadeIn, null, null, 12000, 1000, false);
+  animation(brush, null, null, 1500, 12000, 2000, false)
   
   // setTimeout(vAnimation(5000, lyric[2]), 23000);
   // setTimeout(vAnimation(7000, lyric[3]), 37000)
