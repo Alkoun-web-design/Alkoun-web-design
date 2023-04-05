@@ -77,6 +77,8 @@ const sparklingStars = () => {
     animation(star, fadeIn, null, null, randDelay, 1000, true)
 }};
 
+sparklingStars();
+
 
 
 
