@@ -176,6 +176,7 @@ body {
 }
 
 #music {
+  display: hidden;
   position: absolute;
   z-index: 3;
   top: 0;
