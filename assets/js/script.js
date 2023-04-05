@@ -120,14 +120,14 @@ changer.addEventListener('click', function(){
 
 
 // Space Animation
-const spaceRotation = animation('.space', null, 980, null, 0, 30000, true);
+// const spaceRotation = animation('.space', null, 980, null, 0, 30000, true);
 
 // Spaceman Animation
-const spacemanRotation = animation('.man', null, 3000, null, 0, 50000, true);
+// const spacemanRotation = animation('.man', null, 3000, null, 0, 50000, true);
 
-/*function hide(evt){
-  evt.target.style.visibility = 'hidden';
-}*/
+// function hide(evt){
+//   evt.target.style.visibility = 'hidden';
+
 
 // Navigation
 const showPage = function(){
