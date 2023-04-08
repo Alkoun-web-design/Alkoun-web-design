@@ -3,12 +3,13 @@ const stars = document.querySelectorAll('#stars path');
 const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
 const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
 const spaceBG = document.querySelector(".space");
-const homeElements = ['#line1','#line2']
-// const spaceArea = spaceBG.getBoundingClientRect();
-// const spaceTranslateX = spaceArea.right - spaceArea.left;
+const homeElements = ['#line1','#line2'];
+const spaceArea = spaceBG.getBoundingClientRect();
+const spaceTranslateX = spaceArea.right - spaceArea.left;
 const oldUI = [spaceBG, '.earth', '.man', '#header', '#footer', '#home', '#projects', '#contact-us', '#about-us', '#privacy-policy']
 const newUI = ['#newHome','#stars']; 
-
+const newHome = document.querySelector('#newHome');
+const starsBG = document.querySelector('#stars');
 const fadeInOut = [{opacity: 0},{opacity: 1},{opacity: 0}];
 const fadeOut = [{opacity: 1},{opacity: 0}]
 const fadeIn = [{opacity: 0},{opacity: 1}]
@@ -19,7 +20,39 @@ const nameInput = document.querySelector('.ui-input');
 const input = document.querySelector('.ui-input input');
 const bodyHTML = document.querySelector('body');
 const changer = document.querySelector('#changeButton');
-
+const lyrics = [`There's a thirst deep inside of me I can't control`,
+              `There's a desert underneath that cracks my bones`,
+              `There's a river that runs dry within my heart`,
+              `There's a distance to your light that seems too far`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let it wash away the sorrows I've found`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `There's a storm within my <span class="l-word">heart</span> that needs you now`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `<span class="l-word">Love</span> rain down`,
+              `<span class="l-word">Love</span> rain down`,
+              `There's a craving that will never come to pass`,
+              `There's a hunger that will never cease to last`,
+              `There's a aching that lies deep within my <span class="l-word">soul</span>`,
+              `For the promise that someday I could be whole`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let it wash away the sorrows I've found`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `There's a storm within my <span class="l-word">heart</span> that needs you now`,
+              `That needs you now`,
+              `And the fire inside is burning`,
+              `That this <span class="l-word">heart</span> cannot contain`,
+              `Know that I'm still longing`,
+              `Like the dry earth longs for the rain`,
+              `Yeah, yeah`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let it wash away the sorrows I've found`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `There's a storm within my <span class="l-word">heart</span> that needs you now`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `<span class="l-word">Love</span> rain down`,
+              `Let your <span class="l-word">love</span> rain down`,
+              `Let your <span class="l-word">love</span> rain down, rain down, rain down, rain down, yeah`];
 const heart = document.querySelector('#heart');
 const heartPath = document.querySelector('#heart-path');
 const lyricH1s = document.querySelectorAll('.brush h1');
@@ -36,16 +69,16 @@ const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-
 
 
 
-const vAnimation = (targetDuration, lyricNum, callback) => {
-  brushH1.innerHTML=lyricNum;
-  anime({
-    targets: brushH1,
-    keyframes: fadeInOut,
-    duration: targetDuration,
-    easing: 'linear',
-  });
-  callback;
-}
+// const vAnimation = (targetDuration, lyricNum, callback) => {
+//   brushH1.innerHTML=lyricNum;
+//   anime({
+//     targets: brushH1,
+//     keyframes: fadeInOut,
+//     duration: targetDuration,
+//     easing: 'linear',
+//   });
+//   callback;
+// }
 
 const animation = (targetElement, targetKeyframes, moveX, moveY, targetDelay, targetDuration, isLoop) => {
   anime({
@@ -60,15 +93,51 @@ const animation = (targetElement, targetKeyframes, moveX, moveY, targetDelay, ta
   });
 }
 
+const bodyBG = () => {
+  bodyHTML.style.background = 'linear-gradient(180deg, rgba(16,22,44,1) 10%, rgba(39,39,67,1) 55%, rgba(81,67,82,1) 100%)';
+};
 
-homeanime = animation(homeElements, fadeIn, null, null, 0, 2000, false)
+//Home FadeIn animation
+animation(homeElements, fadeIn, null, null, 0, 2000, false);
+
+// Space Animation
+animation(spaceBG, null, 980, null, 0, 30000, true);
+
+// Spaceman Animation
+animation(man, null, 3000, null, 0, 50000, true);
 
 music.onplay = (event) => {
   animation(heart, fadeInOut, null, null, 0, 4000, true);
   animation(heartPath, colorIn, null, null, 0, 210000, false);
   animation(lyricH1s, fadeIn, null, null, 12000, 1000, false);
   animation(brush, null, null, 1500, 12000, 2000, false)
-
+  
+  // setTimeout(vAnimation(5000, lyric[2]), 23000);
+  // setTimeout(vAnimation(7000, lyric[3]), 37000)
+  // setTimeout(vAnimation(7000, lyric[4]), 45000) 
+  // setTimeout(vAnimation(7000, lyric[5]), 45000)
+  // setTimeout(vAnimation(7000, lyric[6]), 52000) 
+  // setTimeout(vAnimation(6000, lyric[7]), 59500)
+  // setTimeout(vAnimation(3000, lyric[8]), 66000) 
+  // setTimeout(vAnimation(2000, lyric[9]), 71000) 
+  // setTimeout(vAnimation(6000, lyric[10]), 74500)
+  // setTimeout(vAnimation(6000, lyric[11]), 81000)
+  // setTimeout(vAnimation(6000, lyric[12]), 89000)
+  // setTimeout(vAnimation(6000, lyric[13]), 95500)
+  // setTimeout(vAnimation(7000, lyric[14]), 102500)
+  // setTimeout(vAnimation(7000, lyric[15]), 110000) 
+  // setTimeout(vAnimation(6000, lyric[16]), 117000) 
+  // setTimeout(vAnimation(6000, lyric[17]), 124500)
+  // setTimeout(vAnimation(6000, lyric[18]), 132000)
+  // setTimeout(vAnimation(6000, lyric[19]), 138000)
+  // setTimeout(vAnimation(6000, lyric[20]), 144000)
+  // setTimeout(vAnimation(6000, lyric[21]), 152000) 
+  // setTimeout(vAnimation(6000, lyric[22]), 159000)
+  // setTimeout(vAnimation(6000, lyric[23]), 166000)
+  // setTimeout(vAnimation(6000, lyric[24]), 173000)
+  // setTimeout(vAnimation(6000, lyric[25]), 180000)
+  // setTimeout(vAnimation(6000, lyric[26]), 187000) 
+  // setTimeout(vAnimation(6000, lyric[27]), 194000)
 };
 
 const sparklingStars = () => {
@@ -76,8 +145,6 @@ const sparklingStars = () => {
     let randDelay = (Math.random()*1000);
     animation(star, fadeIn, null, null, randDelay, 1000, true)
 }};
-
-sparklingStars();
 
 
 
@@ -104,32 +171,31 @@ sparklingStars();
 
 
 // fOR yOU
-vanisher.addEventListener('click', function(){
-  nameInput.style.display='block';
-  animation(nameInput, fadeIn, null, null, 0, 500, false);
-});
+// vanisher.addEventListener('click', function(){
+//   nameInput.style.display='block';
+//   animation(nameInput, fadeIn, null, null, 0, 500, false);
+// });
 
-changer.addEventListener('click', function(){
-  if(input.value.toLowerCase()==='lezan'){
-    animation(oldUI, fadeOut, null, null, 3000, 2000, false) 
-    animation('.ui-input', fadeOut, null, null, 4000, 2000, false);
-    animation(newUI, fadeIn, null, null, 6000, 2000, false)
-    sparklingStars();
-  } else {
-    animation('#message', fadeInOut, null, null, 0, 6000, false);
-  }
-});
+// changer.addEventListener('click', function(){
+//   if(input.value.toLowerCase()==='lezan'){
+//     animation(oldUI, fadeOut, null, null, 3000, 2000, false) 
+//     newHome.style.display='block';
+//     starsBG.style.display='block';
+//     setTimeout(bodyBG, 4000)
+//     animation('.ui-input', fadeOut, null, null, 4000, 2000, false);
+//     animation(newUI, fadeIn, null, null, 6000, 2000, false)
+//     sparklingStars();
+//   } else {
+//     animation('#message', fadeInOut, null, null, 0, 6000, false);
+//   }
+// });
 
 
-// Space Animation
-// const spaceRotation = animation('.space', null, 980, null, 0, 30000, true);
 
-// Spaceman Animation
-// const spacemanRotation = animation('.man', null, 3000, null, 0, 50000, true);
 
-// function hide(evt){
-//   evt.target.style.visibility = 'hidden';
-
+/*function hide(evt){
+  evt.target.style.visibility = 'hidden';
+}*/
 
 // Navigation
 const showPage = function(){
@@ -155,4 +221,3 @@ document.querySelector("#projects-btn").addEventListener('click', showPage);
 document.querySelector("#about-us-btn").addEventListener('click', showPage);
 document.querySelector("#contact-us-btn").addEventListener('click', showPage);
 document.querySelector("#privacy-policy-btn").addEventListener('click', showPage);
-
