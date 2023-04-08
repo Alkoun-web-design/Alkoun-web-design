@@ -66,7 +66,8 @@
   --almostblack:#040404;
   --almostwhite:#f4f4f4;
   --almostwhitetrans: #f4f4f4e1;
-  --spacegrade: linear-gradient(to right, #345785 0%, #743aa0 100%);
+  --spacegrade: linear-gradient(to right, #6da4ec 0%, #9c41e2 100%);
+  /* --spacegrade: linear-gradient(to right, #345785 0%, #743aa0 100%); */
   --gray:#777777;
   --glass: #0000007e;
   --transparent: #00000000;
@@ -269,8 +270,8 @@ a, button {
   background: var(--almostblack);
   transition: 0.5s;
   width: fit-content;
-  margin: 1em;
-  padding: 0;
+  margin: 0.2em;
+  padding: 0.3em 0.6em;
 }
 
 .a:hover {
