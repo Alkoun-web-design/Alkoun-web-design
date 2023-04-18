@@ -102,7 +102,9 @@ const bodyBG = () => {
 
 //Home FadeIn animation
 homeFadeIn =animation(homeElements, fadeIn, null, null, 0, 2000, false, 
-  animation(mw, null, -280, -2000, 0, 200000, false, null)
+  animation(mw, fadeIn, null, null, 0, 5000, false,
+    animation(mw, null, -380, -2500, 0, 150000, false, null)
+  )
 );
 
 //MilkyWay Animation
