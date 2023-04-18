@@ -81,7 +81,7 @@ const vAnimation = (targetDuration, lyricNum, callback) => {
   callback;
 }
 
-const animation = (targetElement, targetKeyframes, moveX, moveY, targetDelay, targetDuration, isLoop) => {
+const animation = (targetElement, targetKeyframes, moveX, moveY, targetDelay, targetDuration, isLoop, callback) => {
   anime({
     targets: targetElement,
     keyframes: targetKeyframes,
@@ -92,17 +92,20 @@ const animation = (targetElement, targetKeyframes, moveX, moveY, targetDelay, ta
     loop: isLoop,
     easing: 'linear',
   });
+  callback;
 }
+
 
 const bodyBG = () => {
   bodyHTML.style.background = 'linear-gradient(180deg, rgba(16,22,44,1) 10%, rgba(39,39,67,1) 55%, rgba(81,67,82,1) 100%)';
 };
 
 //Home FadeIn animation
-homeFadeIn =animation(homeElements, fadeIn, null, null, 0, 2000, false);
+homeFadeIn =animation(homeElements, fadeIn, null, null, 0, 2000, false, 
+  animation(mw, null, -280, -2000, 0, 200000, false, null)
+);
 
 //MilkyWay Animation
-mwAnime = animation(mw, null, -280, -1700, 0, 200000, false);
 
 // Space Animation
 // spaceAnimation = animation(spaceBG, null, 980, null, 0, 30000, true);
@@ -147,7 +150,7 @@ music.onplay = (event) => {
 const sparklingStars = () => {
   for (let star of stars){
     let randDelay = (Math.random()*1000);
-    animation(star, fadeIn, null, null, randDelay, 1000, true)
+    animation(star, fadeIn, null, null, randDelay, 1000, true, null)
 }};
 
 
@@ -177,17 +180,17 @@ const sparklingStars = () => {
 // fOR yOU
 vanisher.addEventListener('click', function(){
   nameInput.style.display='block';
-  animation(nameInput, fadeIn, null, null, 0, 500, false);
+  animation(nameInput, fadeIn, null, null, 0, 500, false, null);
 });
 
 changer.addEventListener('click', function(){
   if(input.value.toLowerCase()==='lezan'){
-    animation(oldUI, fadeOut, null, null, 3000, 2000, false) 
+    animation(oldUI, fadeOut, null, null, 3000, 2000, false, null) 
     newHome.style.display='block';
     starsBG.style.display='block';
     setTimeout(bodyBG, 4000)
-    animation('.ui-input', fadeOut, null, null, 4000, 2000, false);
-    animation(newUI, fadeIn, null, null, 6000, 2000, false)
+    animation('.ui-input', fadeOut, null, null, 4000, 2000, false, null);
+    animation(newUI, fadeIn, null, null, 6000, 2000, false, null)
     sparklingStars();
   } else {
     nameInput.style.display='none';

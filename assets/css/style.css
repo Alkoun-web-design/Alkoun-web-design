@@ -351,10 +351,9 @@ p {
 }
 
 .content-box {
-  margin: 1em 0;
+  margin: 1em 7%;
   padding: 1em 2em;
   height: fit-content;
-  width: 100%;
   border-radius: 2em;
   background: rgba(0, 0, 0, 0.238);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -452,7 +451,6 @@ p {
 
 
 #about-us {
-  margin: 0 7%;
   height: 100%;
   overflow-y: auto;
 }
@@ -461,9 +459,7 @@ p {
 
 
 #projects {
-  margin: 0 7%;
   height: 100%;
-  width: 100%;
   overflow-y: auto;
 }
 
@@ -554,7 +550,6 @@ border: 1px solid var(--gray);
 
 
 #contact-us {
-  margin: 0 7%;
   overflow-y: auto;
   height: 100%;
 }
@@ -628,7 +623,6 @@ input:active, textarea:active {
 
 
 #priv-policy {
-  margin: 0 7%;
   display: none;
 }
 
