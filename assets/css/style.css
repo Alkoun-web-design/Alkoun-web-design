@@ -300,10 +300,11 @@ a, button {
   right: 100%;
 }
 
-.mw_bg {
-  width: auto;
+.mw-bg {
+  position: absolute;
+  z-index:-2;
+  width: 120%;
   height: auto;
-  object-position: 0% 0%;
 }
 
 .space {
@@ -406,7 +407,7 @@ p {
 
 
 #center {
-  padding: 0 7%;
+  padding: 0;
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -451,6 +452,7 @@ p {
 
 
 #about-us {
+  margin: 0 7%;
   height: 100%;
   overflow-y: auto;
 }
@@ -459,6 +461,7 @@ p {
 
 
 #projects {
+  margin: 0 7%;
   height: 100%;
   width: 100%;
   overflow-y: auto;
@@ -551,6 +554,7 @@ border: 1px solid var(--gray);
 
 
 #contact-us {
+  margin: 0 7%;
   overflow-y: auto;
   height: 100%;
 }
@@ -624,51 +628,52 @@ input:active, textarea:active {
 
 
 #priv-policy {
-display: none;
+  margin: 0 7%;
+  display: none;
 }
 
 
 
 
 #footer {
-padding: 0 7%;
-height: 16%;
+  padding: 0 7%;
+  height: 16%;
 }
 
 .nav-button, .priv-policy-btn {
-padding: 0rem;
-margin: 3.5px auto;
-width: 10em;
-border: 1px solid var(--transparent);
+  padding: 0rem;
+  margin: 3.5px auto;
+  width: 10em;
+  border: 1px solid var(--transparent);
 }
 
 .nav-logo {
-display: inline-block;
-vertical-align: sub;
-padding: 0%;
-width: 1em;
-height: 1em;
+  display: inline-block;
+  vertical-align: sub;
+  padding: 0%;
+  width: 1em;
+  height: 1em;
 }
 
 .nav-text {
-display: inline-block;
-padding: 0%;
-margin: 0;
+  display: inline-block;
+  padding: 0%;
+  margin: 0;
 }
 
 .pp-text {
-display: inline-block;
-font-size: 0.889rem;
-padding: 0%;
-margin: 0;
+  display: inline-block;
+  font-size: 0.889rem;
+  padding: 0%;
+  margin: 0;
 }
 
 .pp-logo {
-display: inline-block;
-vertical-align: sub;
-margin: 0.2rem;
-width: 1em;
-height: 1em;
+  display: inline-block;
+  vertical-align: sub;
+  margin: 0.2rem;
+  width: 1em;
+  height: 1em;
 }
 
 

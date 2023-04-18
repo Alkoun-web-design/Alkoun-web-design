@@ -65,6 +65,7 @@ const h1Delay = [14000, 17000, 23000, 37000, 45000, 45000, 52000,
                 187000, 194000]
 const pages = ["#home", "#projects", "#about-us", "#contact-us", "#privacy-policy",]; 
 const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
+const mw = document.querySelector('.mw-bg');
 
 
 
@@ -100,11 +101,14 @@ const bodyBG = () => {
 //Home FadeIn animation
 homeFadeIn =animation(homeElements, fadeIn, null, null, 0, 2000, false);
 
+//MilkyWay Animation
+mwAnime = animation(mw, null, -280, -1700, 0, 200000, false);
+
 // Space Animation
-spaceAnimation = animation(spaceBG, null, 980, null, 0, 30000, true);
+// spaceAnimation = animation(spaceBG, null, 980, null, 0, 30000, true);
 
 // Spaceman Animation
-animation(man, null, 3000, null, 0, 50000, true);
+// animation(man, null, 3000, null, 0, 50000, true);
 
 music.onplay = (event) => {
   animation(heart, fadeInOut, null, null, 0, 4000, true);
