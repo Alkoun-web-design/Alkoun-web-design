@@ -300,6 +300,12 @@ a, button {
   right: 100%;
 }
 
+.mw_bg {
+  width: auto;
+  height: auto;
+  object-position: 0% 0%;
+}
+
 .space {
   position: absolute;
   height: 100%;
