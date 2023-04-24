@@ -2,7 +2,7 @@ const man = document.querySelector(".man");
 const stars = document.querySelectorAll('#stars path');
 const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
 const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
-const spaceBG = document.querySelector(".space");
+const spaceBG = document.querySelector('.space');
 const homeElements = ['#line1','#line2'];
 // const spaceArea = spaceBG.getBoundingClientRect();
 // const spaceTranslateX = spaceArea.right - spaceArea.left;
@@ -102,15 +102,24 @@ const bodyBG = () => {
 
 //Home FadeIn animation
 homeFadeIn =animation(homeElements, fadeIn, null, null, 0, 2000, false, 
-  animation(mw, fadeIn, null, null, 0, 5000, false,
-    animation(mw, null, -380, -2500, 0, 150000, false, null)
-  )
+  // animation(mw, fadeIn, null, null, 0, 5000, false,
+  //   animation(mw, null, -380, -2500, 0, 150000, false, null)
+  // )
 );
 
 //MilkyWay Animation
 
 // Space Animation
-// spaceAnimation = animation(spaceBG, null, 980, null, 0, 30000, true);
+animation('.space', null, 1800, 0, 0, 70000, true, false);
+
+// const spaceAnime = () => {
+//     if (spaceBg.left==0) {
+//       let area = document.getElementById("background-area");
+//       area.innerHTML += '<img alt="Space-Background" class="space" src="assets/img/space3.svg">'; 
+//     } else {
+
+//     };
+//   };
 
 // Spaceman Animation
 // animation(man, null, 3000, null, 0, 50000, true);
@@ -213,13 +222,13 @@ const showPage = function(){
     if (navButton.includes(this.id)) {
       for (let page of pages) {
         if (navButton.includes(page)){
+          animation(page, fadeIn, null, null, 0, 1000, false);
           document.querySelector(page).classList.add('active');
           document.querySelector(page).classList.remove('inactive');
-          animation(page, fadeIn, null, null, 0, 1000, false);
         } else {
+          animation(page, fadeOut, null, null, 0, 500, false);
           document.querySelector(page).classList.add('inactive');
           document.querySelector(page).classList.remove('active');
-          animation(page, fadeOut, null, null, 0, 500, false);
         }
       }  
     }
