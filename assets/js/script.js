@@ -218,7 +218,7 @@ changer.addEventListener('click', function(){
 }*/
 
 // Navigation
-const showPage = function(){
+const showPage = () => {
   for (let navButton of navButtons) {
     if (navButton.includes(this.id)) {
       for (let page of pages) {
