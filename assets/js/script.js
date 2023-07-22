@@ -20,7 +20,7 @@ const nameInput = document.querySelector('.ui-input');
 const input = document.querySelector('.ui-input input');
 const bodyHTML = document.querySelector('body');
 const changer = document.querySelector('#changeButton');
-const navigation = document.getElementById("navigation");
+
 // const lyrics = [`There's a thirst deep inside of me I can't control`,
 //               `There's a desert underneath that cracks my bones`,
 //               `There's a river that runs dry within my heart`,
@@ -238,4 +238,10 @@ const showPage = () => {
   }
 };
 
-navigation.addEventListener('click', showPage);
+document.getElementById("home-btn").addEventListener('click', showPage);
+document.getElementById("about-us-btn").addEventListener('click', showPage);
+document.getElementById("projects-btn").addEventListener('click', showPage);
+document.getElementById("contact-us-btn").addEventListener('click', showPage);
+document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
+
+

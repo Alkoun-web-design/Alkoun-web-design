@@ -635,7 +635,7 @@ input:active, textarea:active {
   height: 16%;
 }
 
-.nav-button {
+.nav-button, .priv-policy-btn {
   padding: 0rem;
   margin: 3.5px auto;
   width: 10em;
@@ -648,10 +648,6 @@ input:active, textarea:active {
   padding: 0%;
   width: 1em;
   height: 1em;
-}
-
-#privacy-policy-btn {
-  display:block;
 }
 
 .nav-text {
