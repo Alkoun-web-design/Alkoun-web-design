@@ -219,10 +219,11 @@ changer.addEventListener('click', function(){
 
 // Navigation
 const showPage = () => {
-  console.log("working");
+  console.log(this.id);
   for (let navButton of navButtons) {
     if (navButton.includes(this.id)) {
       for (let page of pages) {
+        console.log(navButton, page);
         if (navButton.includes(page)){
           animation(page, fadeIn, null, null, 0, 1000, false);
           document.querySelector(page).classList.add('active');
