@@ -20,7 +20,7 @@ const nameInput = document.querySelector('.ui-input');
 const input = document.querySelector('.ui-input input');
 const bodyHTML = document.querySelector('body');
 const changer = document.querySelector('#changeButton');
-const footer = document.getElementById("footer");
+const navigation = document.getElementById("navigation");
 // const lyrics = [`There's a thirst deep inside of me I can't control`,
 //               `There's a desert underneath that cracks my bones`,
 //               `There's a river that runs dry within my heart`,
@@ -238,4 +238,4 @@ const showPage = () => {
   }
 };
 
-footer.addEventListener('click', showPage);
+navigation.addEventListener('click', showPage);
