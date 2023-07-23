@@ -223,7 +223,7 @@ const showPage = () => {
   for (let navButton of navButtons) {
     console.log(this.id);
     console.log(navButton);
-    if (navButton.includes(this.id)) {
+    if (navButton.includes(target.id)) {
       for (let page of pages) {
         console.log(page);
         console.log(navButton, page);
