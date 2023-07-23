@@ -1025,10 +1025,13 @@ input:active, textarea:active {
     height: 25px;
   }
 
+  #about-us p {
+    margin: 0 5em;  
+  }
+
   #projects p {
     margin: 0 5em;
   }
-  
 
   .project-img-preview {
     width: 13em;
@@ -1101,6 +1104,10 @@ input:active, textarea:active {
   .l21 {
     width: 28px;
     height: 28px;
+  }
+
+  #about-us p {
+    margin: 0 8em;  
   }
 
   #projects p {
