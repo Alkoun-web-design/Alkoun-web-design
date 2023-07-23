@@ -220,7 +220,7 @@ changer.addEventListener('click', function(){
 // Navigation
 const showPage = () => {
   for (let navButton of navButtons) {
-    if (navButton.includes(this.id)) {
+    // if (navButton.includes(this.id)) {
       for (let page of pages) {
         if (navButton.includes(page)){
           animation(page, fadeIn, null, null, 0, 1000, false);
@@ -238,7 +238,7 @@ const showPage = () => {
           document.querySelector(page).classList.remove('active');
         }
       }  
-    }
+    // }
   }
 };
 
