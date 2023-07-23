@@ -4,8 +4,6 @@ const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
 const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
 const spaceBG = document.querySelector('.space');
 const homeElements = ['#line1','#line2'];
-// const spaceArea = spaceBG.getBoundingClientRect();
-// const spaceTranslateX = spaceArea.right - spaceArea.left;
 const oldUI = [spaceBG, '.earth', '.man', '#header', '#footer', '#home', '#projects', '#contact-us', '#about-us', '#privacy-policy'];
 const newUI = ['#newHome','#stars']; 
 const newHome = document.querySelector('#newHome');
@@ -109,19 +107,8 @@ homeFadeIn =animation(homeElements, fadeIn, null, null, 0, 2000, false,
   // )
 );
 
-//MilkyWay Animation
-
 // Space Animation
 animation('.space', null, 1800, 0, 0, 70000, true, false);
-
-// const spaceAnime = () => {
-//     if (spaceBg.left==0) {
-//       let area = document.getElementById("background-area");
-//       area.innerHTML += '<img alt="Space-Background" class="space" src="assets/img/space3.svg">'; 
-//     } else {
-
-//     };
-//   };
 
 // Spaceman Animation
 // animation(man, null, 3000, null, 0, 50000, true);
@@ -167,29 +154,6 @@ const sparklingStars = () => {
 }};
 
 
-
-
-// const spaceAnimation = () => {
-//   if (innerWidth === 980) {
-//     return 980
-//   } else if (innerWidth > 980) {
-//     return innerWidth / 1.4
-//   } else if (innerWidth > 980) {
-//     return innerWidth * 1.4
-//   } 
-// }
-
-// if (translatex >  980){
-//   980-0.92 translatex -0.92;
-// }
-
-// const sapceAnime = () => {
-//   if(spaceTranslateX < 982){
-//   spaceTranslateX - 1 % 
-//   };
-// };
-
-
 // fOR yOU
 vanisher.addEventListener('click', function(){
   nameInput.style.display='block';
@@ -225,15 +189,9 @@ const showPage = function() {
       for (let page of pages) {
         if (navButton.includes(page)){
           animation(page, fadeIn, null, null, 0, 1000, false);
-          console.log('working');
-          console.log(navButton);
-          console.log(page);
           document.querySelector(page).classList.add('active');
           document.querySelector(page).classList.remove('inactive');
         } else {
-          console.log('not working');
-          console.log(navButton);
-          console.log(page);
           animation(page, fadeOut, null, null, 0, 500, false);
           document.querySelector(page).classList.add('inactive');
           document.querySelector(page).classList.remove('active');
