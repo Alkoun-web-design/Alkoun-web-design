@@ -20,6 +20,7 @@ const nameInput = document.querySelector('.ui-input');
 const input = document.querySelector('.ui-input input');
 const bodyHTML = document.querySelector('body');
 const changer = document.querySelector('#changeButton');
+const footer = document.getElementById('footer');
 
 // const lyrics = [`There's a thirst deep inside of me I can't control`,
 //               `There's a desert underneath that cracks my bones`,
@@ -242,11 +243,11 @@ const showPage = function() {
   }
 };
 
-document.getElementById("home-btn").addEventListener('click', showPage);
-document.getElementById("about-us-btn").addEventListener('click', showPage);
-document.getElementById("projects-btn").addEventListener('click', showPage);
-document.getElementById("contact-us-btn").addEventListener('click', showPage);
-document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
+footer.addEventListener('click', showPage);
+// document.getElementById("about-us-btn").addEventListener('click', showPage);
+// document.getElementById("projects-btn").addEventListener('click', showPage);
+// document.getElementById("contact-us-btn").addEventListener('click', showPage);
+// document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
 
 document.querySelector('body').addEventListener('click', (event)=>{
   console.log(event.target.id);
