@@ -221,7 +221,7 @@ changer.addEventListener('click', function(){
 const showPage = (event) => {
   console.log(target.id);
   for (let navButton of navButtons) {
-    console.log(this.id);
+    console.log(event.target.id);
     console.log(navButton);
     if (navButton.includes(event.target.id)) {
       for (let page of pages) {
