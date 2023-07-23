@@ -244,6 +244,6 @@ document.getElementById("projects-btn").addEventListener('click', showPage);
 document.getElementById("contact-us-btn").addEventListener('click', showPage);
 document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
 
-document.querySelector('nody').addEventListener('click', ()=>{
+document.querySelector('body').addEventListener('click', ()=>{
   console.log(this.id);
 });
