@@ -1025,6 +1025,11 @@ input:active, textarea:active {
     height: 25px;
   }
 
+  #projects p {
+    margin: 0 5em;
+  }
+  
+
   .project-img-preview {
     width: 13em;
     margin: 1em 3em;
@@ -1096,6 +1101,10 @@ input:active, textarea:active {
   .l21 {
     width: 28px;
     height: 28px;
+  }
+
+  #projects p {
+    margin: 0 8em;
   }
 
   .project-img-preview {
