@@ -224,11 +224,15 @@ const showPage = () => {
       for (let page of pages) {
         if (navButton.includes(page)){
           animation(page, fadeIn, null, null, 0, 1000, false);
-          console.log('working', navButton, page);
+          console.log('working');
+          console.log(navButton);
+          console.log(page);
           document.querySelector(page).classList.add('active');
           document.querySelector(page).classList.remove('inactive');
         } else {
-          console.log('not working', navButton, page);
+          console.log('not working');
+          console.log(navButton);
+          console.log(page);
           animation(page, fadeOut, null, null, 0, 500, false);
           document.querySelector(page).classList.add('inactive');
           document.querySelector(page).classList.remove('active');
