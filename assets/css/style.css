@@ -512,6 +512,7 @@ display: none;
 }
 
 .project-img-preview {
+height: 25%;
 width: 25%;
 border: 1px solid var(--gray);
 margin: 1em 3em;
