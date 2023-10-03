@@ -206,6 +206,6 @@ const showPage = function() {
 
 document.getElementById("home-btn").addEventListener('click', showPage);
 document.getElementById("about-us-btn").addEventListener('click', showPage);
-document.getElementById("projects-btn").addEventListener('click', showPage);
+// document.getElementById("projects-btn").addEventListener('click', showPage);
 document.getElementById("contact-us-btn").addEventListener('click', showPage);
 document.getElementById("privacy-policy-btn").addEventListener('click', showPage);
