@@ -1,7 +1,7 @@
 const man = document.querySelector(".man");
 const stars = document.querySelectorAll('#stars path');
-const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
-const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
+// const projectNames = ["project-name-0", "project-name-1", "project-name-2"];
+// const projectDetails = ["project-0-details", "project-1-details", "project-2-details"];
 const spaceBG = document.querySelector('.space');
 const homeElements = ['#line1','#line2'];
 const oldUI = [spaceBG, '.earth', '.man', '#header', '#footer', '#home', '#projects', '#contact-us', '#about-us', '#privacy-policy'];
