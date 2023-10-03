@@ -62,9 +62,12 @@ const h1Delay = [14000, 17000, 23000, 37000, 45000, 45000, 52000,
                 59500, 66000, 71000, 74500, 81000, 89000, 95500,
                 102500, 110000, 117000, 124500, 132000, 138000,
                 144000, 152000, 159000, 166000, 173000, 180000,
-                187000, 194000]
-const pages = ["#home", "#projects", "#about-us", "#contact-us", "#privacy-policy",]; 
-const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
+//                 187000, 194000]
+// const pages = ["#home", "#projects", "#about-us", "#contact-us", "#privacy-policy",]; 
+// const navButtons = ["#home-btn", "#projects-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
+                 ]
+const pages = ["#home", "#about-us", "#contact-us", "#privacy-policy",]; 
+const navButtons = ["#home-btn", "#about-us-btn", "#contact-us-btn", "#privacy-policy-btn"];
 const mw = document.querySelector('.mw-bg');
 
 
